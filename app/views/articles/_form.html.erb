@@ -1,0 +1,19 @@
+<%= render 'errors' %>
+<%# form_with is used for https method. Only 'Model' should be used in edit action. local is used for local https request.%>
+<%= form_with(model: @article,  local: true) do |f| %>
+
+    <p>
+        <%= f.label :title %><br/>
+        <%= f.text_field :title %>
+    </p>
+
+    <p>
+        <%= f.label :description %><br/>
+        <%= f.text_area :description %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+
+<% end %>
