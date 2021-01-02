@@ -1,3 +1,15 @@
-<h1>This is about page!</h1>
+<div class="text-center mt-4"><h1>About me</h1></div>
 
-<%= link_to 'Home', root_path %>
+<div class="text-center">
+    <%= image_tag("Praveen.jpg", class:"aboutmeimage") %>
+    <div class="font-italic mt-3"><ins><h3>Praveen</h3></ins></div>
+    <h5>Contact:</h5>
+</div>
+
+<div class="text-center">
+    <%= link_to image_tag("linkedin.png", class:"icon"), "https://www.linkedin.com/in/praveen-r-a21ab7b1" %>
+    <%= link_to image_tag("github.png", class:"icon"), "https://github.com/PraveenMSD" %>
+    <%= link_to image_tag("gmail.png", class:"icon"), "mailto:praveenrk189@gmail.com" %>
+    <%= link_to image_tag("twitter.png", class:"icon"), "https://twitter.com/praveen_csk?s=08" %>
+    <%= link_to image_tag("facebook.png", class:"icon"), "https://www.facebook.com/praveen.csk.3" %>
+</div>

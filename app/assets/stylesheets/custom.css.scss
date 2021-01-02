@@ -28,6 +28,19 @@
     background-size: cover;
 }
 
+.aboutmeimage {    
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    box-shadow: 10px 10px 20px gray
+}
+
+.icon {
+    height: 30px;
+    margin-right: 10px;
+}
+
 html,
 body {
   height: 100%;
