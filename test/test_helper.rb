@@ -4,7 +4,8 @@ require "rails/test_help"
 
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
-  parallelize(workers: :number_of_processors, with: :threads)
+  # comment below parallelize when getting "database is locked error".
+  #parallelize(workers: :number_of_processors, with: :threads)
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
