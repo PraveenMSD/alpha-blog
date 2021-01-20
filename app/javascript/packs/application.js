@@ -12,4 +12,10 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+
+require('jquery')
+require('packs/jquery.validate.min')
+require('packs/articles')
+require('packs/signin')
+require('packs/signup')
 import "bootstrap"
