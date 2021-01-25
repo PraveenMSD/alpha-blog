@@ -7,6 +7,14 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
+
+
+.iti__flag {background-image: url("path/to/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("path/to/flags@2x.png");}
+}
+
 .navbar {
     background-color: black !important;
 }
@@ -53,7 +61,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 .right-half {
   position: absolute;
   left: 10px;
-  top: 270px;
+  top: 280px;
   width: 10%;
   border-radius: 25px;
   border: 2px solid #73AD21;

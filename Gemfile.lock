@@ -94,6 +94,9 @@ GEM
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     i18n_data (0.10.0)
+    intl-tel-input-rails (12.3.0)
+      railties (>= 3.1)
+      sass-rails
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     loofah (2.8.0)
@@ -226,6 +229,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   country_select (~> 4.0)
+  intl-tel-input-rails
   jbuilder (~> 2.7)
   pg
   puma (~> 5.0)

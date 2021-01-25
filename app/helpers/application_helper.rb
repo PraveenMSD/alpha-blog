@@ -10,24 +10,5 @@ module ApplicationHelper
         end
     end
     
-    def countries
-        [
-          ['Africa'],
-          ['Asia'],
-          ['Australia'],
-          ['Belgium'],
-          ['France'],
-          ['Colorado'],
-          ['Germany'],
-          ['Indonesia'],
-          ['India'],
-          ['Ireland'],
-          ['Italy'],
-          ['Saudi Arabia'],
-          ['UAE'],
-          ['USA'],
-          ['United Kingdom']
-        ]
-    end
 
 end

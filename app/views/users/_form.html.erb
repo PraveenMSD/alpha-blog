@@ -1,12 +1,8 @@
-<link rel="stylesheet" href="build/css/intlTelInput.css">\
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/6.4.1/css/intlTelInput.css">
+
 <!-- Use as a jQuery plugin -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="build/js/intlTelInput-jquery.min.js"></script> 
-<script>
-$("#telephone").intlTelInput({
-});
-
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput-jquery.min.js"></script> 
 
 <div class="container">
     <%# form_with is used for https method. Only 'Model' should be used in edit action. local is used for local https request.%>
@@ -40,9 +36,8 @@ $("#telephone").intlTelInput({
                 </div>
                 <div class="form-group row">
                     <%= f.label :Phone_number, class: "col-sm-2 col-form-label text-light" %>
-                    <input type="text" id="phoneField" name="phoneField" class="phone-field">
                     <div class="col-sm-10">
-                        <%= f.number_field :phone_number, class: "form-control shadow rounded", placeholder: "Enter phone number" %>
+                        <%= f.number_field :phone_number, type: "tel", class: "form-control shadow rounded", placeholder: "Enter phone number" %>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -73,7 +68,6 @@ $("#telephone").intlTelInput({
                     <%= f.submit(@user.new_record? ? "Sign up" : "Update account" ,class: "btn btn-outline-light btn-lg") %>
                 </div>
             <% end %>
-            <input type="tel" id="demo" placeholder="" id="telephone">
         </div>
     </div>
 </div>

@@ -24,6 +24,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.1.0'
 gem 'select2-rails'
 gem 'country_select', '~> 4.0'
+gem 'intl-tel-input-rails'
 #gem 'jquery-validation-rails'
 
 # Use Active Storage variant

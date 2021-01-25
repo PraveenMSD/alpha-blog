@@ -19,5 +19,6 @@ require('packs/articles')
 require('packs/signin')
 require('packs/signup')
 require('packs/country')
+require('packs/intlTelInput')
 import "bootstrap"
 import "@fortawesome/fontawesome-free/js/all";
