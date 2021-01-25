@@ -18,4 +18,6 @@ require('packs/jquery.validate.min')
 require('packs/articles')
 require('packs/signin')
 require('packs/signup')
+require('packs/country')
 import "bootstrap"
+import "@fortawesome/fontawesome-free/js/all";

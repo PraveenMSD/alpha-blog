@@ -2,7 +2,7 @@ $( document ).on('turbolinks:load', function() {
   $("#new_article").validate({
     rules: {
       "article[title]": {
-        required: true,
+        required: true
       },
       "article[description]": {
         required: true,

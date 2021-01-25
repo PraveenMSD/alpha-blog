@@ -1,7 +1,20 @@
 <div class="container">
+    <% if signed_in? && @user == current_user %>
+    <div class="right-half">
+        <div class="user-card" >
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+            <h5 class="card-title"><%= @user.username %></h5>
+            <p class="card-text"><%= @user.city %></p>
+            <p class="card-text"><%= @user.state %></p>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </div>
+    </div>
+    <% end %>
 <% @articles.each do |article| %>
     <div class="row justify-content-md-center">
-        <div class="col-12 mt-4">
+        <div class="col-10 mt-4">
             <div class="card text-center shadow mb-5 bg-white rounded">
                 <div class="card-header font-italic">
                     <% if article.user %>

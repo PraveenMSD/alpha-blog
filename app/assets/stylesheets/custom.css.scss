@@ -1,5 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+
 .navbar {
     background-color: black !important;
 }
@@ -13,15 +20,56 @@
   color: white !important;
 }
 
+@media (min-width: 768px) {
+  .container{
+      width:1000px;
+  }
+}
+
+
 #logo {
     float: left;
     font-size: 1.7em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
 }
 
+#user_icon {
+  float: none;
+  margin: 0 auto;
+  height: 40px;
+  width: 50px;
+}
+
+.modal-dialog {
+  top:5%;
+  left: 44%;
+  width: 12%;
+  outline: none;
+}
+
+.right-half {
+  position: absolute;
+  left: 10px;
+  top: 270px;
+  width: 10%;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  height: 220px;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dropdown-menu {
+  left: -60%;
+  min-width:100px;
+  outline: none;
+}
 #home-container {
     margin-top: 25px;
 }

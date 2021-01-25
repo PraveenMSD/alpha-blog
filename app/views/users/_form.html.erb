@@ -1,7 +1,17 @@
+<link rel="stylesheet" href="build/css/intlTelInput.css">\
+<!-- Use as a jQuery plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="build/js/intlTelInput-jquery.min.js"></script> 
+<script>
+$("#telephone").intlTelInput({
+});
+
+</script>
+
 <div class="container">
     <%# form_with is used for https method. Only 'Model' should be used in edit action. local is used for local https request.%>
     <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-12">
             <%= render 'shared/errors', obj: @user %>
             <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded",  local: true, id: "user_base") do |f| %>
                 <div class="form-group row">
@@ -13,19 +23,57 @@
                 <div class="form-group row">
                     <%= f.label :email, class: "col-sm-2 col-form-label text-light" %>
                     <div class="col-sm-10">
-                    <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+                        <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
                     </div>
                 </div>
                 <div class="form-group row">
                     <%= f.label :password, class: "col-sm-2 col-form-label text-light" %>
                     <div class="col-sm-10">
-                    <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+                        <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :confirm_password, class: "col-sm-2 col-form-label text-light" %>
+                    <div class="col-sm-10">
+                        <%= f.password_field :confirm_password, class: "form-control shadow rounded", placeholder: "Enter the password again" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :Phone_number, class: "col-sm-2 col-form-label text-light" %>
+                    <input type="text" id="phoneField" name="phoneField" class="phone-field">
+                    <div class="col-sm-10">
+                        <%= f.number_field :phone_number, class: "form-control shadow rounded", placeholder: "Enter phone number" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :city, class: "col-sm-2 col-form-label text-light" %>
+                    <div class="col-sm-10">
+                        <%= f.text_field :city, class: "form-control shadow rounded", placeholder: "Enter city name" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :state, class: "col-sm-2 col-form-label text-light" %>
+                    <div class="col-sm-10">
+                        <%= f.text_field :state, class: "form-control shadow rounded", placeholder: "Enter state name" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :zip_code, class: "col-sm-2 col-form-label text-light" %>
+                    <div class="col-sm-10">
+                        <%= f.text_field :zip_code, class: "form-control shadow rounded", placeholder: "Enter area zip code" %>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <%= f.label :country, class: "col-sm-2 col-form-label text-light" %>
+                    <div class="col-sm-10">
+                        <%= f.country_select :country_code, class: "form-control" %>
                     </div>
                 </div>
                 <div class="form-group row justify-content-center">
                     <%= f.submit(@user.new_record? ? "Sign up" : "Update account" ,class: "btn btn-outline-light btn-lg") %>
                 </div>
             <% end %>
+            <input type="tel" id="demo" placeholder="" id="telephone">
         </div>
     </div>
 </div>
