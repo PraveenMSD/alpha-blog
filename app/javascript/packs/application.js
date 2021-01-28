@@ -21,7 +21,6 @@ require('packs/signup')
 require('packs/country')
 require('packs/category')
 require('packs/intlTelInput')
-require('packs/intlbootstrap')
 
 import "bootstrap"
 import "@fortawesome/fontawesome-free/js/all";
