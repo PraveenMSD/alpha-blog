@@ -6,7 +6,7 @@
 <h3 class="text-center mt-4" >Articles</h3>
 <% if signed_in? && @user == current_user %>
     <div class="text-center mt-4">
-            <%= link_to "Edit your profile", edit_user_path(@user), class:"btn btn-outline-info" %>
+            <%# link_to "Edit your profile", edit_user_path(@user), class:"btn btn-outline-info" %>
             <% if !@user.articles.present? %>
                 <div class="text-center mt-4"><h6>You haven't written any articles yet!. Need to create one</h6>
                     <%= link_to "Click here", new_article_path %>
@@ -14,8 +14,6 @@
             <% end %>
     </div>
 <% end %>
-
-
 
 <div class="flickr_pagination">
     <%= will_paginate @articles, :container => false %>
