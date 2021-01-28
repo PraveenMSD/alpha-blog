@@ -5,8 +5,23 @@
     </button>
     
 
+    
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <% if signed_in? && current_user.admin? %>
+              <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
+            <% end %>  
+            <%= link_to "View categories", categories_path, class: "dropdown-item" %>
+          </div>
+        </li>
+        
         <% if signed_in? %>
           <li class="nav-item">
             <%# link_to "About", about_path, class: "nav-link" %>
@@ -34,32 +49,6 @@
           </li>
         <% end %>
       </ul>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="modal-body">
-            <% if signed_in? %>
-            <p>
-
-                <%= link_to current_user.username, user_path(current_user) %>
-            </p>
-            <hr>
-            <p>
-              <%= link_to "Write a story", new_article_path %>
-            </p>
-            <hr>
-            <p>
-              <%= link_to "Log out", logout_path, method: :delete %>
-            </p>
-            <% end %>
-          </div>
-        </div>
-      </div>
     </div>
 </nav>
 

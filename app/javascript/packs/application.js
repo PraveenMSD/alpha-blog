@@ -8,10 +8,10 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
 
 require('jquery')
 require('packs/jquery.validate.min')
@@ -19,6 +19,9 @@ require('packs/articles')
 require('packs/signin')
 require('packs/signup')
 require('packs/country')
+require('packs/category')
 require('packs/intlTelInput')
+require('intlTelInput')
+require('packs/intlbootstrap')
 import "bootstrap"
 import "@fortawesome/fontawesome-free/js/all";

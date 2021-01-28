@@ -15,11 +15,11 @@
                         <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger" %>
                     <% end %>
                 </div>
-                <% if @article.comments.present? || signed_in? %>
+                <!-- <% if @article.comments.present? || signed_in? %>
                     <div class="card-footer">
                         <%= render 'comments/comment' %>
                     </div>
-                <% end %>
+                <% end %> -->
 
                 <div class="card-footer text-muted">
                     <small>Created <%= time_ago_in_words(@article.created_at) %> ago,
