@@ -58,13 +58,47 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 //   outline: none;
 // }
 
+#user_profile {
+  position: absolute;
+  top: 75px;
+  left: -81px;
+  height: 70px;
+  width: 250px;
+}
 
+#user_about_card_name {
+  position: relative; 
+  top: 26px; 
+  left: 70px;
+ 
+}
+
+#user_about_card_city {
+  position: relative; 
+  top: 15px; 
+  left: 70px;
+  font-size: 20px;
+}
+
+#user_about_card_state {
+  position: relative; 
+  top: 12px; 
+  left: 70px;
+  font-size: 19px;
+}
+
+#user_about_card_follow_icon {
+  position: relative; 
+  top: 9px; 
+  left: 73px;
+  font-size: 26px;
+}
 
 .right-half {
   position: absolute;
   left: 10px;
-  top: 280px;
-  width: 10%;
+  top: 300px;
+  width: 15%;
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding: 20px;
@@ -75,10 +109,41 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   transform: translateY(-50%);
 }
 
-.dropdown-menu {
-  left: -60%;
-  min-width:100px;
+#user_dropdown_menu {
+  left: -100%;
+  top: 50px;
+  min-width:125px;
+  height: 220px;
   outline: none;
+  border-radius: 25px;
+}
+
+.duser-name {
+  position: relative; 
+  top: 8px; 
+  left: 35px;
+  font-size: 19px;
+}
+
+.duser-story {
+  position: relative; 
+  top: 3px; 
+  left: 9px;
+  font-size: 19px;
+}
+
+.duser-editprofile {
+  position: relative; 
+  top: 2px; 
+  left: 18px;
+  font-size: 19px;
+}
+
+.duser-logout {
+  position: relative; 
+  top: -8px; 
+  left: 30px;
+  font-size: 19px;
 }
 
 #home-container {
@@ -152,3 +217,46 @@ body {
   .flickr_pagination .next_page {
     margin-left: 1em; }
 
+/* Category Card Index */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

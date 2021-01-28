@@ -2,13 +2,15 @@
     <% if signed_in? && @user == current_user %>
     <div class="right-half">
         <div class="user-card" >
-            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
-            <h5 class="card-title"><%= @user.username %></h5>
-            <p class="card-text"><%= @user.city %></p>
-            <p class="card-text"><%= @user.state %></p>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-github"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true", id="user_profile"></i>
+            <h3 class="card-title", id="user_about_card_name"><b><%= @user.username %></b></h3>
+            <div class="card-text", id="user_about_card_city"><%= @user.city %></div>
+            <div class="card-text", id="user_about_card_state"><%= @user.state %></div>
+            <div class="follow-icon", id="user_about_card_follow_icon">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </div>
         </div>
     </div>
     <% end %>
@@ -17,6 +19,7 @@
         <div class="col-10 mt-4">
             <div class="card text-center shadow mb-5 bg-white rounded">
                 <div class="card-header font-italic">
+                    <h4><%= link_to article.title, article_path(article), class:"text-success"%></h4>
                     <% if article.user %>
                         by <%= link_to article.user.username, user_path(article.user) %>
                     <% end %>
@@ -25,7 +28,7 @@
                     <% end %>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><%= link_to article.title, article_path(article), class:"text-success"%></h5>
+                    <h5 class="card-title"><%# link_to article.title, article_path(article), class:"text-success"%></h5>
                     <p class="card-text"><%= truncate(article.description, length: 100)%></p>
                     <%= link_to "View", article_path(article), class: "btn btn-outline-success" %>
                     <% if signed_in? && (article.user == current_user || current_user.admin?) %>
