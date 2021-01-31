@@ -26,6 +26,7 @@ gem 'will_paginate', '~> 3.3.0'
 gem 'select2-rails'
 gem 'country_select', '~> 4.0'
 gem 'intl-tel-input-rails'
+gem 'dotenv-rails'
 #gem 'jquery-validation-rails'
 
 # Use Active Storage variant
@@ -38,6 +39,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'foreman'
 end
 
 group :development do
