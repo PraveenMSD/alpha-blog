@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-    has_many :comments
+    has_many :comments, dependent: :destroy
     belongs_to :user
     has_many :article_categories
     has_many :categories, through: :article_categories

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
     <%= link_to "BLOG", articles_path, class: "navbar-brand", id: "logo" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                 <hr>
                 <div class="duser-editprofile"><%= link_to "Edit profile", edit_user_path(current_user) %></div>
                 <hr>
-                <div class="duser-logout"><%= link_to "Log out", logout_path, method: :delete %></div>
+                <div class="duser-logout"><%= link_to "Sign out", destroy_user_session_path, class: 'dropdown-item', :method => :delete %></div>
                 <li role="separator" class="divider"></li>
               </ul>
             </div>
@@ -42,11 +42,109 @@
           <li class="nav-item">
             <%= link_to 'Sign in', login_path, class:"nav-link" %>
           </li>
+          <a class="btn btn-light mr-4" href="/users/sign_in">Sign in</a>
+          <a class="btn btn-dark mr-4" href="/users/sign_up">Get started</a>
         <% end %>
       </ul>
     </div>
-</nav>
+</nav> -->
 
 
 
-  
+<header class="blog-header py-3 bg-dark">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-xl-8 col-lg-8 col-4 pt-1">
+            <%= link_to root_path, class: 'blog-header-logo nav-logo text-dark' do %>
+                <%= image_tag "medium-pr.png", class:"blog-logo", :style => "display:inline-block;" %>
+            <% end %>
+        </div>
+        <div class="col-8 col-xl-4 col-lg-4 d-flex justify-content-end align-items-center">
+            <%= link_to "Categories", categories_path, class:"btn btn-light mr-4" %>
+            <% if signed_in? %>
+            <div class="btn-group">
+                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user fa-2x" style="color:white"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header"><%= current_user.username %> </h6>
+                  <li>
+                    <%= link_to 'New Article', new_article_path, class:"dropdown-item" %>
+                  </li>
+                  <li>
+                    <% if signed_in? && current_user.admin? %>
+                        <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
+                    <% end %> 
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <%= link_to "Profile", user_path(current_user), class: 'dropdown-item' %>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <%= link_to "Sign out", destroy_user_session_path, class: 'dropdown-item', :method => :delete %>
+                  </li>
+                </div>
+            </div>
+            <% else %>
+                <a class="btn btn-light mr-4" id="signin_btn" href="/users/sign_in">Sign in</a>
+                <a class="btn btn-dark mr-4" id="signup_btn" href="/users/sign_up">Get started</a>
+            <% end %>
+            
+        </div>
+    </div>
+</header>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <%= link_to root_path, class: 'blog-header-logo nav-logo text-dark' do %>
+    <%= image_tag "medium-pr.png", class:"blog-logo", :style => "display:inline-block;" %>
+  <% end %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <%= link_to "Categories", categories_path, class:"btn btn-light mr-4" %>
+   
+            <% if signed_in? %>
+              <div class="btn-group">
+                  <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user fa-2x"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <h6 class="dropdown-header"><%= current_user.username %> </h6>
+                    <li>
+                      <%= link_to 'New Article', new_article_path, class:"dropdown-item" %>
+                    </li>
+                    <li>
+                      <% if signed_in? && current_user.admin? %>
+                          <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
+                      <% end %> 
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <%= link_to "Profile", user_path(current_user), class: 'dropdown-item' %>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <%= link_to "Sign out", destroy_user_session_path, class: 'dropdown-item', :method => :delete %>
+                    </li>
+                  </div>
+              </div>
+              <% else %>
+                  <a class="btn btn-light mr-4" id="signin_btn" href="/users/sign_in">Sign in</a>
+                  <a class="btn btn-dark mr-4" id="signup_btn" href="/users/sign_up">Get started</a>
+              <% end %>
+         
+          </li>
+      </ul>
+    </div>
+</nav> -->

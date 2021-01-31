@@ -11,13 +11,15 @@
                 <% if signed_in? && (@article.user == current_user || current_user.admin?) %>
                     <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
                     <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger" %>
+                    <%# link_to "Comment", article_comment_path(@article), class: "btn btn-outline-success" %>
                 <% end %>
             </div>
-            <!-- <% if @article.comments.present? || signed_in? %>
+            <% if @article.comments.present? || signed_in? %>
                 <div class="card-footer">
-                    <%= render 'comments/comment' %>
+                    <%= render 'comments/comment', collection: @article.comments.all %>
+                    <%= render 'comments/form' %>
                 </div>
-            <% end %> -->
+            <% end %>
 
             <div class="card-footer text-muted">
                 <small>Created <%= time_ago_in_words(@article.created_at) %> ago,
