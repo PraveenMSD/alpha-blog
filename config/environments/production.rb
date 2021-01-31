@@ -18,7 +18,7 @@ Rails.application.configure do
   password: ENV["GMAIL_PASSWORD"]
   }
 
-  config.action_mailer.default_url_options = { :host => 'praveenblog.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'praveenblog.herokuapp.com', :protocol => 'http' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
