@@ -75,9 +75,15 @@
         <%= f.text_field :zip_code, class:"form-control", autofocus: true, autocomplete: "zip_code" %>
       </div>
 
-      <div class="my-3">
-        <%= f.submit "Sign up", class:"btn btn-primary btn-block text-center" %>
+      <div class="devise_signup my-3 col-md-4">
+        <%= f.submit "Sign up", class:"btn btn-primary btn-block" %>
       </div>
     <% end %>
+    
+    <div class="my-3 col-md-12 text-center">
+      <h5>Already have an account?
+      <%= link_to "Sign in", new_session_path(resource_name) %></h5>
+    </div>
+
   </div>
 </div>
