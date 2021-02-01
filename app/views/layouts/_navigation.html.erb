@@ -82,6 +82,9 @@
                     <%= link_to "Profile", user_path(current_user), class: 'dropdown-item' %>
                   </li>
                   <li>
+                    <%= link_to "Settings", edit_user_registration_path, class: 'dropdown-item' %>
+                  </li>
+                  <li>
                     <hr class="dropdown-divider">
                   </li>
                   <li>
@@ -91,7 +94,7 @@
             </div>
             <% else %>
                 <a class="btn btn-light mr-4" id="signin_btn" href="/users/sign_in">Sign in</a>
-                <a class="btn btn-dark mr-4" id="signup_btn" href="/users/sign_up">Get started</a>
+                <a class="btn btn-primary mr-4" id="signup_btn" href="/users/sign_up">Get started</a>
             <% end %>
             
         </div>

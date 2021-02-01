@@ -1,11 +1,33 @@
 $( document ).on('turbolinks:load', function() {
-    $("#user_login").validate({
+    $("#new_user").validate({
       rules: {
-        "session[email]": {
+        "user[email]": {
           required: true
         },
-        "session[password]": {
+        "user[password]": {
           required: true
+        },
+        "user[confirm_password]": {
+          required: true,
+          equalTo: "#user_password"
+        },
+        "user[phone_number]": {
+            required: true,
+            number: true,
+            minlength: 10,
+            maxlength: 10
+        },
+        "user[city]": {
+            required: true
+        },
+        "user[state]": {
+            required: true
+        },
+        "user[zip_code]": {
+            required: true
+        },
+        "user[country_code]": {
+            required: true,
         }
       }
     });

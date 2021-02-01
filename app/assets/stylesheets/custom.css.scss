@@ -93,28 +93,28 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 #user_about_card_name {
   position: relative; 
   top: 26px; 
-  left: 70px;
+  left: 20px;
  
 }
 
 #user_about_card_city {
   position: relative; 
   top: 15px; 
-  left: 70px;
+  left: 20px;
   font-size: 20px;
 }
 
 #user_about_card_state {
   position: relative; 
   top: 12px; 
-  left: 70px;
+  left: 20px;
   font-size: 19px;
 }
 
 #user_about_card_follow_icon {
   position: relative; 
   top: 9px; 
-  left: 73px;
+  left: 20px;
   font-size: 26px;
 }
 
@@ -123,8 +123,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   left: 10px;
   top: 300px;
   width: 15%;
-  border-radius: 25px;
-  border: 2px solid #73AD21;
+  // border-radius: 25px;
+  // border: 2px solid #73AD21;
   padding: 20px;
   height: 220px;
   position: fixed;

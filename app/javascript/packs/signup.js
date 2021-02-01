@@ -1,5 +1,5 @@
 $( document ).on('turbolinks:load', function() {
-    $("#user_base").validate({
+    $("#edit_user").validate({
       rules: {
         "user[username]": {
           required: true
