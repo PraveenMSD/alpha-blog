@@ -1493,4 +1493,783 @@ Loading production environment (Rails 6.1.1)
 [1G▽[6n[1G[K[6n[1Girb(main):001:0> [K[1G[18G[0m[1Girb(main):001:0> [34m[1m[4mU[0m[K[1G[19G[0m[1Girb(main):001:0> [34m[1m[4mUs[0m[K[1G[20G[0m[1Girb(main):001:0> [34m[1m[4mUse[0m[K[1G[21G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m[K[1G[22G[0m[1Girb(main):001:0* [34m[1m[4mUser[0m.[K[1G[23G[0m[1Girb(main):001:0* [34m[1m[4mUser[0m.l[K[1G[24G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.la[K[1G[25G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.las[K[1G[26G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[27G[1G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[27G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[1G[1S[1G[K[1G[1mTraceback[m (most recent call last):
 [1mArgumentError ([4mwrong number of arguments (given 0, expected 1)[0;1m)[m
 [6n[1Girb(main):002:0> [K[1G[18G[0m[1Girb(main):002:0> [34m[1m[4mU[0m[K[1G[19G[0m[1Girb(main):002:0> [34m[1m[4mUs[0m[K[1G[20G[0m[1Girb(main):002:0> [34m[1m[4mUse[0m[K[1G[21G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m[K[1G[22G[0m[1Girb(main):002:0* [34m[1m[4mUser[0m.[K[1G[23G[0m[1Girb(main):002:0* [34m[1m[4mUser[0m.c[K[1G[24G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.co[K[1G[25G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.cou[K[1G[26G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.coun[K[1G[27G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[28G[1G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[28G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[1G[1S[1G[K[1G=> [34m[1m6[0m
-[6n[1Girb(main):003:0> [K[1G[18G[1Girb(main):003:0> e[K[1G[19G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1Girb(main):003:0> exit[K[1G[1G[1S[1G[K[1G]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rails console[
+[6n[1Girb(main):003:0> [K[1G[18G[1Girb(main):003:0> e[K[1G[19G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1Girb(main):003:0> exit[K[1G[1G[1S[1G[K[1G]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rails console[10Pestartgit push heroku main[Kcommit -m "Designed devise pages| User add comments| mailer configured"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   config/environments/production.rb[m
+	[31mmodified:   install[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mconfig/initializers/smtp.rb[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git statusheroku run rails console[10Pestartgit push heroku main[Kcommit -m "Designed devise pages| User add comments| mailer configured"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[K
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git add -Astatusheroku run rails console[10Pestartgit push heroku main[Kcommit -m "Designed devise pages| User add comments| mailer configured"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"a"d"e"d"[1P"[1P"d"e"d" "s"m"t"p"."r"b" "t"o" "i"n"i"t"i"a"l"i"z"e"r"[C
+[main 99cdbd4] added smtp.rb to initializer
+ 3 files changed, 535 insertions(+), 40 deletions(-)
+ create mode 100644 config/initializers/smtp.rb
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git push
+Username for 'https://github.com': PraveenMSD
+Password for 'https://PraveenMSD@github.com': 
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 8.94 KiB | 915.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To https://github.com/PraveenMSD/alpha-blog.git
+   5d50e15..99cdbd4  main -> main
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git push heroku main
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 8.94 KiB | 1.28 MiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Building on the Heroku-20 stack[K
+remote: -----> Ruby app detected[K
+remote: -----> Installing bundler 2.1.4[K
+remote: -----> Removing BUNDLED WITH version in the Gemfile.lock[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-3.0.0[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        Removing `Gemfile.lock` because it was generated on Windows.[K
+remote:        Bundler will do a full resolve so native gems are handled properly.[K
+remote:        This may result in unexpected gem versions being used in your app.[K
+remote:        In rare occasions Bundler may not be able to resolve your dependencies at all.[K
+remote:        [K
+remote:        https://devcenter.heroku.com/articles/bundler-windows-gemfile[K
+remote: 
+remote: -----> Installing dependencies using bundler 2.1.4[K
+remote:        Running: BUNDLE_WITHOUT='development:test' BUNDLE_PATH=vendor/bundle BUNDLE_BIN=vendor/bundle/bin bundle install -j4[K
+remote:        Fetching gem metadata from https://rubygems.org/...........[K
+remote:        Fetching gem metadata from https://rubygems.org/.[K
+remote:        Resolving dependencies......[K
+remote:        Using rake 13.0.3[K
+remote:        Using concurrent-ruby 1.1.8[K
+remote:        Using minitest 5.14.3[K
+remote:        Using zeitwerk 2.4.2[K
+remote:        Using builder 3.2.4[K
+remote:        Using erubi 1.10.0[K
+remote:        Using racc 1.5.2[K
+remote:        Using crass 1.0.6[K
+remote:        Using rack 2.2.3[K
+remote:        Using nio4r 2.5.4[K
+remote:        Using websocket-extensions 0.1.5[K
+remote:        Using mimemagic 0.3.5[K
+remote:        Using mini_mime 1.0.2[K
+remote:        Using bcrypt 3.1.16[K
+remote:        Using msgpack 1.4.2[K
+remote:        Using bundler 2.2.3[K
+remote:        Using i18n_data 0.10.0[K
+remote:        Using sixarm_ruby_unaccent 1.2.0[K
+remote:        Using unicode_utils 1.4.0[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using method_source 1.0.0[K
+remote:        Using thor 1.1.0[K
+remote:        Using dotenv 2.7.6[K
+remote:        Using ffi 1.14.2[K
+remote:        Using tilt 2.0.10[K
+remote:        Using pg 1.2.3[K
+remote:        Using select2-rails 4.0.13[K
+remote:        Using semantic_range 2.3.1[K
+remote:        Using turbolinks-source 5.2.0[K
+remote:        Using will_paginate 3.3.0[K
+remote:        Using i18n 1.8.7[K
+remote:        Using tzinfo 2.0.4[K
+remote:        Using nokogiri 1.11.1 (x86_64-linux)[K
+remote:        Using rack-test 1.1.0[K
+remote:        Using websocket-driver 0.7.3[K
+remote:        Using marcel 0.3.3[K
+remote:        Using mail 2.7.1[K
+remote:        Using bootsnap 1.6.0[K
+remote:        Using sort_alphabetical 1.1.0[K
+remote:        Using warden 1.2.9[K
+remote:        Using sassc 2.4.0[K
+remote:        Using sprockets 4.0.2[K
+remote:        Using puma 5.2.0[K
+remote:        Using rack-proxy 0.6.5[K
+remote:        Using turbolinks 5.2.1[K
+remote:        Using activesupport 6.1.1[K
+remote:        Using countries 3.0.1[K
+remote:        Using loofah 2.9.0[K
+remote:        Using rails-dom-testing 2.0.3[K
+remote:        Using rails-html-sanitizer 1.3.0[K
+remote:        Using globalid 0.4.2[K
+remote:        Using activemodel 6.1.1[K
+remote:        Using jbuilder 2.11.2[K
+remote:        Using country_select 4.0.0[K
+remote:        Using activejob 6.1.1[K
+remote:        Using actionview 6.1.1[K
+remote:        Using actionpack 6.1.1[K
+remote:        Using activerecord 6.1.1[K
+remote:        Using actioncable 6.1.1[K
+remote:        Using activestorage 6.1.1[K
+remote:        Using actionmailer 6.1.1[K
+remote:        Using railties 6.1.1[K
+remote:        Using sprockets-rails 3.2.2[K
+remote:        Using actionmailbox 6.1.1[K
+remote:        Using actiontext 6.1.1[K
+remote:        Using dotenv-rails 2.7.6[K
+remote:        Using sassc-rails 2.1.2[K
+remote:        Using rails 6.1.1[K
+remote:        Using webpacker 5.2.1[K
+remote:        Using responders 3.0.1[K
+remote:        Using sass-rails 6.0.0[K
+remote:        Using devise 4.7.3[K
+remote:        Using intl-tel-input-rails 12.3.0[K
+remote:        Bundle complete! 23 Gemfile dependencies, 73 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into `./vendor/bundle`[K
+remote:        Removing bundler (2.1.4)[K
+remote:        Bundle completed (4.52s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Installing node-v12.16.2-linux-x64[K
+remote: -----> Installing yarn-v1.22.4[K
+remote: -----> Detecting rake tasks[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        yarn install v1.22.4[K
+remote:        [1/4] Resolving packages...[K
+remote:        [2/4] Fetching packages...[K
+remote:        info fsevents@2.1.3: The platform "linux" is incompatible with this module.[K
+remote:        info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.[K
+remote:        info fsevents@1.2.13: The platform "linux" is incompatible with this module.[K
+remote:        info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.[K
+remote:        [3/4] Linking dependencies...[K
+remote:        [1;33mwarning[m " > webpack-dev-server@3.11.0" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".[K
+remote:        [1;33mwarning[m "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".[K
+remote:        [4/4] Building fresh packages...[K
+remote:        Done in 30.59s.[K
+remote:        Compiling...[K
+remote:        Compiled all packs in /tmp/build_02ef9040/public/packs[K
+remote:        Hash: 2b576508b17cafa92dad[K
+remote:        Version: webpack 4.44.2[K
+remote:        Time: 58830ms[K
+remote:        Built at: 02/01/2021 7:47:27 AM[K
+remote:                                                       Asset        Size                  Chunks                                Chunk Names[K
+remote:                                css/application-fcc19837.css    32.8 KiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [immutable]         application[K
+remote:                             css/application-fcc19837.css.br    3.25 KiB                          [emitted]                     [K
+remote:                             css/application-fcc19837.css.gz    4.43 KiB                          [emitted]                     [K
+remote:                                    css/country-b5505a27.css    14.1 KiB                       3  [emitted] [immutable]         country[K
+remote:                                 css/country-b5505a27.css.br    1.55 KiB                          [emitted]                     [K
+remote:                                 css/country-b5505a27.css.gz    1.87 KiB                          [emitted]                     [K
+remote:                               css/intlTelInput-b50f908f.css    18.7 KiB                       4  [emitted] [immutable]         intlTelInput[K
+remote:                            css/intlTelInput-b50f908f.css.br    1.81 KiB                          [emitted]                     [K
+remote:                            css/intlTelInput-b50f908f.css.gz    2.78 KiB                          [emitted]                     [K
+remote:                      js/application-4e97001789cfc09db43d.js     1.5 MiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [immutable]  [big]  application[K
+remote:          js/application-4e97001789cfc09db43d.js.LICENSE.txt    2.59 KiB                          [emitted]                     [K
+remote:                   js/application-4e97001789cfc09db43d.js.br     445 KiB                          [emitted]              [big]  [K
+remote:                   js/application-4e97001789cfc09db43d.js.gz     539 KiB                          [emitted]              [big]  [K
+remote:                  js/application-4e97001789cfc09db43d.js.map    2.72 MiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [dev]               application[K
+remote:               js/application-4e97001789cfc09db43d.js.map.br     700 KiB                          [emitted]              [big]  [K
+remote:               js/application-4e97001789cfc09db43d.js.map.gz     847 KiB                          [emitted]              [big]  [K
+remote:                         js/articles-e2bc8d40a4d471df3019.js    89.7 KiB                       1  [emitted] [immutable]         articles[K
+remote:             js/articles-e2bc8d40a4d471df3019.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                      js/articles-e2bc8d40a4d471df3019.js.br      28 KiB                          [emitted]                     [K
+remote:                      js/articles-e2bc8d40a4d471df3019.js.gz      31 KiB                          [emitted]                     [K
+remote:                     js/articles-e2bc8d40a4d471df3019.js.map     460 KiB                       1  [emitted] [dev]               articles[K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                         js/category-e71fbe98044f0d47fd05.js    89.7 KiB                       2  [emitted] [immutable]         category[K
+remote:             js/category-e71fbe98044f0d47fd05.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.br      28 KiB                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.gz      31 KiB                          [emitted]                     [K
+remote:                     js/category-e71fbe98044f0d47fd05.js.map     460 KiB                       2  [emitted] [dev]               category[K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                          js/country-367852358cb54214a5af.js     162 KiB                       3  [emitted] [immutable]         country[K
+remote:              js/country-367852358cb54214a5af.js.LICENSE.txt   827 bytes                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.br    43.7 KiB                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.gz    49.8 KiB                          [emitted]                     [K
+remote:                      js/country-367852358cb54214a5af.js.map     715 KiB                       3  [emitted] [dev]               country[K
+remote:                   js/country-367852358cb54214a5af.js.map.br     167 KiB                          [emitted]                     [K
+remote:                   js/country-367852358cb54214a5af.js.map.gz     197 KiB                          [emitted]                     [K
+remote:                     js/intlTelInput-87b6766f38d06d02d814.js     126 KiB                       4  [emitted] [immutable]         intlTelInput[K
+remote:         js/intlTelInput-87b6766f38d06d02d814.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                  js/intlTelInput-87b6766f38d06d02d814.js.br    37.2 KiB                          [emitted]                     [K
+remote:                  js/intlTelInput-87b6766f38d06d02d814.js.gz    41.7 KiB                          [emitted]                     [K
+remote:                 js/intlTelInput-87b6766f38d06d02d814.js.map     571 KiB                       4  [emitted] [dev]               intlTelInput[K
+remote:              js/intlTelInput-87b6766f38d06d02d814.js.map.br     144 KiB                          [emitted]                     [K
+remote:              js/intlTelInput-87b6766f38d06d02d814.js.map.gz     170 KiB                          [emitted]                     [K
+remote:                    js/intlbootstrap-8d56149815c24be32766.js    90.3 KiB                       5  [emitted] [immutable]         intlbootstrap[K
+remote:        js/intlbootstrap-8d56149815c24be32766.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                 js/intlbootstrap-8d56149815c24be32766.js.br    28.2 KiB                          [emitted]                     [K
+remote:                 js/intlbootstrap-8d56149815c24be32766.js.gz    31.2 KiB                          [emitted]                     [K
+remote:                js/intlbootstrap-8d56149815c24be32766.js.map     462 KiB                       5  [emitted] [dev]               intlbootstrap[K
+remote:             js/intlbootstrap-8d56149815c24be32766.js.map.br     120 KiB                          [emitted]                     [K
+remote:             js/intlbootstrap-8d56149815c24be32766.js.map.gz     140 KiB                          [emitted]                     [K
+remote:                           js/jquery-b959e2041894f73aa8da.js     112 KiB                       6  [emitted] [immutable]         jquery[K
+remote:               js/jquery-b959e2041894f73aa8da.js.LICENSE.txt   628 bytes                          [emitted]                     [K
+remote:                        js/jquery-b959e2041894f73aa8da.js.br    33.9 KiB                          [emitted]                     [K
+remote:                        js/jquery-b959e2041894f73aa8da.js.gz    37.4 KiB                          [emitted]                     [K
+remote:                       js/jquery-b959e2041894f73aa8da.js.map     508 KiB                       6  [emitted] [dev]               jquery[K
+remote:                    js/jquery-b959e2041894f73aa8da.js.map.br     132 KiB                          [emitted]                     [K
+remote:                    js/jquery-b959e2041894f73aa8da.js.map.gz     154 KiB                          [emitted]                     [K
+remote:                           js/signin-f94096fd972a8f2dd216.js    89.9 KiB                       7  [emitted] [immutable]         signin[K
+remote:               js/signin-f94096fd972a8f2dd216.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                        js/signin-f94096fd972a8f2dd216.js.br    28.1 KiB                          [emitted]                     [K
+remote:                        js/signin-f94096fd972a8f2dd216.js.gz    31.1 KiB                          [emitted]                     [K
+remote:                       js/signin-f94096fd972a8f2dd216.js.map     461 KiB                       7  [emitted] [dev]               signin[K
+remote:                    js/signin-f94096fd972a8f2dd216.js.map.br     119 KiB                          [emitted]                     [K
+remote:                    js/signin-f94096fd972a8f2dd216.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                           js/signup-bbfcb56eddab34a5273b.js      90 KiB                       8  [emitted] [immutable]         signup[K
+remote:               js/signup-bbfcb56eddab34a5273b.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                        js/signup-bbfcb56eddab34a5273b.js.br    28.1 KiB                          [emitted]                     [K
+remote:                        js/signup-bbfcb56eddab34a5273b.js.gz    31.1 KiB                          [emitted]                     [K
+remote:                       js/signup-bbfcb56eddab34a5273b.js.map     461 KiB                       8  [emitted] [dev]               signup[K
+remote:                    js/signup-bbfcb56eddab34a5273b.js.map.br     119 KiB                          [emitted]                     [K
+remote:                    js/signup-bbfcb56eddab34a5273b.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                        js/telephone-1c50939d9c657e1d3405.js  1000 bytes                       9  [emitted] [immutable]         telephone[K
+remote:                     js/telephone-1c50939d9c657e1d3405.js.br   460 bytes                          [emitted]                     [K
+remote:                     js/telephone-1c50939d9c657e1d3405.js.gz   515 bytes                          [emitted]                     [K
+remote:                    js/telephone-1c50939d9c657e1d3405.js.map    4.55 KiB                       9  [emitted] [dev]               telephone[K
+remote:                 js/telephone-1c50939d9c657e1d3405.js.map.br    1.55 KiB                          [emitted]                     [K
+remote:                 js/telephone-1c50939d9c657e1d3405.js.map.gz    1.72 KiB                          [emitted]                     [K
+remote:                                               manifest.json    3.67 KiB                          [emitted]                     [K
+remote:                                            manifest.json.br   592 bytes                          [emitted]                     [K
+remote:                                            manifest.json.gz   678 bytes                          [emitted]                     [K
+remote:                                media/img/flags-007b2705.png    69.2 KiB                          [emitted]                     [K
+remote:                             media/img/flags@2x-9d5328fb.png     170 KiB                          [emitted]                     [K
+remote:        Entrypoint application [big] = css/application-fcc19837.css js/application-4e97001789cfc09db43d.js js/application-4e97001789cfc09db43d.js.map[K
+remote:        Entrypoint articles = js/articles-e2bc8d40a4d471df3019.js js/articles-e2bc8d40a4d471df3019.js.map[K
+remote:        Entrypoint category = js/category-e71fbe98044f0d47fd05.js js/category-e71fbe98044f0d47fd05.js.map[K
+remote:        Entrypoint country = css/country-b5505a27.css js/country-367852358cb54214a5af.js js/country-367852358cb54214a5af.js.map[K
+remote:        Entrypoint intlbootstrap = js/intlbootstrap-8d56149815c24be32766.js js/intlbootstrap-8d56149815c24be32766.js.map[K
+remote:        Entrypoint intlTelInput = css/intlTelInput-b50f908f.css js/intlTelInput-87b6766f38d06d02d814.js js/intlTelInput-87b6766f38d06d02d814.js.map[K
+remote:        Entrypoint jquery = js/jquery-b959e2041894f73aa8da.js js/jquery-b959e2041894f73aa8da.js.map[K
+remote:        Entrypoint signin = js/signin-f94096fd972a8f2dd216.js js/signin-f94096fd972a8f2dd216.js.map[K
+remote:        Entrypoint signup = js/signup-bbfcb56eddab34a5273b.js js/signup-bbfcb56eddab34a5273b.js.map[K
+remote:        Entrypoint telephone = js/telephone-1c50939d9c657e1d3405.js js/telephone-1c50939d9c657e1d3405.js.map[K
+remote:         [1] (webpack)/buildin/module.js 552 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [built][K
+remote:         [3] (webpack)/buildin/global.js 905 bytes {0} [built][K
+remote:         [4] ./app/javascript/packs/jquery.validate.min.js 23.6 KiB {0} {6} [built][K
+remote:         [5] ./app/javascript/packs/articles.js 169 bytes {0} {1} [built][K
+remote:         [6] ./app/javascript/packs/signin.js 415 bytes {0} {7} [built][K
+remote:         [7] ./app/javascript/packs/signup.js 449 bytes {0} {8} [built][K
+remote:         [8] ./app/javascript/packs/country.js 156 bytes {0} {3} [built][K
+remote:        [11] ./app/javascript/packs/category.js 131 bytes {0} {2} [built][K
+remote:        [12] ./app/javascript/packs/intlTelInput.js 259 bytes {0} {4} [built][K
+remote:        [19] ./app/javascript/packs/application.js 753 bytes {0} [built][K
+remote:        [20] ./app/javascript/channels/index.js 205 bytes {0} [built][K
+remote:        [21] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built][K
+remote:        [27] ./app/javascript/packs/intlbootstrap.js 905 bytes {5} [built][K
+remote:        [28] ./app/javascript/packs/telephone.js 0 bytes {9} [built][K
+remote:            + 17 hidden modules[K
+remote:        [K
+remote:        [1;33mWARNING[m in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).[K
+remote:        This can impact web performance.[K
+remote:        Assets: [K
+remote:          js/application-4e97001789cfc09db43d.js (1.5 MiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.gz (539 KiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.map.gz (847 KiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.br (445 KiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.map.br (700 KiB)[K
+remote:        [K
+remote:        [1;33mWARNING[m in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.[K
+remote:        Entrypoints:[K
+remote:          application (1.54 MiB)
+remote:              css/application-fcc19837.css[K
+remote:              js/application-4e97001789cfc09db43d.js[K
+remote:        [K
+remote:        [K
+remote:        [1;33mWARNING[m in webpack performance recommendations: [K
+remote:        You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.[K
+remote:        For more info visit https://webpack.js.org/guides/code-splitting/[K
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/intl-tel-input/build/css/intlTelInput.css:[K
+remote:            Entrypoint mini-css-extract-plugin = *[K
+remote:               5 modules[K
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/select2/dist/css/select2.css:[K
+remote:            Entrypoint mini-css-extract-plugin = *[K
+remote:               2 modules[K
+remote:        [K
+remote:        Asset precompilation completed (97.91s)[K
+remote:        Cleaning assets[K
+remote:        Running: rake assets:clean[K
+remote: -----> Detecting rails configuration[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        Removing `Gemfile.lock` because it was generated on Windows.[K
+remote:        Bundler will do a full resolve so native gems are handled properly.[K
+remote:        This may result in unexpected gem versions being used in your app.[K
+remote:        In rare occasions Bundler may not be able to resolve your dependencies at all.[K
+remote:        [K
+remote:        https://devcenter.heroku.com/articles/bundler-windows-gemfile[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        No Procfile detected, using the default web server.[K
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
+remote: 
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> (none)[K
+remote:        Default types for buildpack -> console, rake, web[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 121.4M[K
+remote: -----> Launching...[K
+remote:        Released v14[K
+remote:        https://praveenblog.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/praveenblog.git
+   5d50e15..99cdbd4  main -> main
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rahe[K[Kke db:migrate
+Running [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m...
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m starting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1028 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... up, run.1028 (Free)
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku restart
+[G[2K[?25lRestarting dynos on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[37C[38;5;104m⢿[0m[1B[G[2K[1A[37C[38;5;104m⡿[0m[1B[G[2K[1A[37C[38;5;104m⣟[0m[1B[G[2K[1A[37C[38;5;104m⣯[0m[1B[G[2K[1A[37C[38;5;104m⣷[0m[1B[G[2K[1A[37C[38;5;104m⣾[0m[1B[G[2K[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[JRestarting dynos on [38;5;104m⬢ praveenblog[0m... done
+[?25h[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:get SENDGRID_USERNAME
+
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:get SENDGRID_PASSWORD
+
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config
+[2m=== [22m[1mpraveenblog Config Vars[22m
+[34m[32mDATABASE_URL[34m[39m:             postgres://vixjosxmzpsxhq:d1d8993af26f5089863183fd0a66446e8f8c77afb875bf241b83546f75e360dd@ec2-54-225-18-166.compute-1.amazonaws.com:5432/d7nndgk33ht3dt
+[34m[32mGMAIL_DOMAIN[34m[39m:             gmail.com
+[34m[32mGMAIL_PASSWORD[34m[39m:           railstest
+[34m[32mGMAIL_USERNAME[34m[39m:           jairockzz12@gmail.com
+[34m[32mLANG[34m[39m:                     en_US.UTF-8
+[34m[32mRACK_ENV[34m[39m:                 production
+[34m[32mRAILS_ENV[34m[39m:                production
+[34m[32mRAILS_LOG_TO_STDOUT[34m[39m:      enabled
+[34m[32mRAILS_SERVE_STATIC_FILES[34m[39m: enabled
+[34m[32mSECRET_KEY_BASE[34m[39m:          db997c95c9771a0883292035af7a846b4b580ab6d3f0b404ea8ba1465d6deded59755f833fdf3344106e1a0697c193278bdef4e5a0a78b7d08646234298b9a85
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid
+[G[2K[?25lSetting [32mSENDGRID_USERNAME[39m, [32mSENDGRID_PASSWORD[39m and restarting [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[77C[38;5;104m⣽[0m[1B[G[2K[1A[77C[38;5;104m⣻[0m[1B[G[2K[1A[77C[38;5;104m⢿[0m[1B[G[2K[1A[77C[38;5;104m⡿[0m[1B[G[2K[1A[77C[38;5;104m⣟[0m[1B[G[2K[1A[77C[38;5;104m⣯[0m[1B[G[2K[1A[77C[38;5;104m⣷[0m[1B[G[2K[1A[77C[38;5;104m⣾[0m[1B[G[2K[1A[77C[38;5;104m⣽[0m[1B[G[2K[1A[77C[38;5;104m⣻[0m[1B[G[2K[1A[77C[38;5;104m⢿[0m[1B[G[2K[1A[77C[38;5;104m⡿[0m[1B[G[2K[1A[77C[38;5;104m⣟[0m[1B[G[2K[1A[77C[38;5;104m⣯[0m[1B[G[2K[1A[77C[38;5;104m⣷[0m[1B[G[2K[1A[77C[38;5;104m⣾[0m[1B[G[2K[1A[77C[38;5;104m⣽[0m[1B[G[2K[1A[77C[38;5;104m⣻[0m[1B[G[2K[1A[77C[38;5;104m⢿[0m[1B[G[2K[1A[JSetting [32mSENDGRID_USERNAME[39m, [32mSENDGRID_PASSWORD[39m and restarting [38;5;104m⬢ praveenblog[0m... done, [34m[1mv15[22m[39m
+[?25h[32mSENDGRID_PASSWORD[39m: praveenrksendgrid
+[32mSENDGRID_USERNAME[39m: praveenrk189@gmail.com
+[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid[A]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[2m=== [22m[1mpraveenblog Config Vars[22m
+[34m[32mDATABASE_URL[34m[39m:             postgres://vixjosxmzpsxhq:d1d8993af26f5089863183fd0a66446e8f8c77afb875bf241b83546f75e360dd@ec2-54-225-18-166.compute-1.amazonaws.com:5432/d7nndgk33ht3dt
+[34m[32mGMAIL_DOMAIN[34m[39m:             gmail.com
+[34m[32mGMAIL_PASSWORD[34m[39m:           railstest
+[34m[32mGMAIL_USERNAME[34m[39m:           jairockzz12@gmail.com
+[34m[32mLANG[34m[39m:                     en_US.UTF-8
+[34m[32mRACK_ENV[34m[39m:                 production
+[34m[32mRAILS_ENV[34m[39m:                production
+[34m[32mRAILS_LOG_TO_STDOUT[34m[39m:      enabled
+[34m[32mRAILS_SERVE_STATIC_FILES[34m[39m: enabled
+[34m[32mSECRET_KEY_BASE[34m[39m:          db997c95c9771a0883292035af7a846b4b580ab6d3f0b404ea8ba1465d6deded59755f833fdf3344106e1a0697c193278bdef4e5a0a78b7d08646234298b9a85
+[34m[32mSENDGRID_PASSWORD[34m[39m:        praveenrksendgrid
+[34m[32mSENDGRID_USERNAME[34m[39m:        praveenrk189@gmail.com
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid[A]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:get SENDGRID_PASSWORDUSERNAMErestart[K
+[G[2K[?25lRestarting dynos on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[37C[38;5;104m⢿[0m[1B[G[2K[1A[37C[38;5;104m⡿[0m[1B[G[2K[1A[37C[38;5;104m⣟[0m[1B[G[2K[1A[37C[38;5;104m⣯[0m[1B[G[2K[1A[37C[38;5;104m⣷[0m[1B[G[2K[1A[37C[38;5;104m⣾[0m[1B[G[2K[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[JRestarting dynos on [38;5;104m⬢ praveenblog[0m... done
+[?25h[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ bundle exec rails console
+Loading development environment (Rails 6.1.0)
+[1G▽[6n[1G[K[6n[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[1Girb(main):001:0> [K[1G[18G[0m[1Girb(main):001:0> puts [36m[1mENV[0m.inspect[K[1G[34G[1G[0m[1Girb(main):001:0> puts [36m[1mENV[0m.inspect[K[1G[34G[1G[0m[1Girb(main):001:0> puts [36m[1mENV[0m.inspect[K[1G[34G[0m[1Girb(main):001:0> puts [36m[1mENV[0m.inspect[K[1G[1G[1S[1G[K[1G{"SHELL"=>"/bin/bash", "SESSION_MANAGER"=>"local/Lenovo-G50-45:@/tmp/.ICE-unix/1655,unix/Lenovo-G50-45:/tmp/.ICE-unix/1655", "QT_ACCESSIBILITY"=>"1", "COLORTERM"=>"truecolor", "XDG_CONFIG_DIRS"=>"/etc/xdg/xdg-ubuntu:/etc/xdg", "XDG_MENU_PREFIX"=>"gnome-", "GNOME_DESKTOP_SESSION_ID"=>"this-is-deprecated", "LANGUAGE"=>"en_IN:en", "GNOME_SHELL_SESSION_MODE"=>"ubuntu", "SSH_AUTH_SOCK"=>"/run/user/1000/keyring/ssh", "RBENV_HOOK_PATH"=>"/home/praveen/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks", "XMODIFIERS"=>"@im=ibus", "DESKTOP_SESSION"=>"ubuntu", "SSH_AGENT_PID"=>"1598", "RBENV_SHELL"=>"bash", "GTK_MODULES"=>"gail:atk-bridge", "PWD"=>"/home/praveen/rails-project/alpha-blog", "XDG_SESSION_DESKTOP"=>"ubuntu", "LOGNAME"=>"praveen", "XDG_SESSION_TYPE"=>"x11", "GPG_AGENT_INFO"=>"/run/user/1000/gnupg/S.gpg-agent:0:1", "XAUTHORITY"=>"/run/user/1000/gdm/Xauthority", "GJS_DEBUG_TOPICS"=>"JS ERROR;JS LOG", "WINDOWPATH"=>"2", "HOME"=>"/home/praveen", "USERNAME"=>"praveen", "IM_CONFIG_PHASE"=>"1", "LANG"=>"en_IN", "LS_COLORS"=>"rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:", "XDG_CURRENT_DESKTOP"=>"ubuntu:GNOME", "VTE_VERSION"=>"6200", "GNOME_TERMINAL_SCREEN"=>"/org/gnome/Terminal/screen/d8de9701_58b2_460a_b948_62a1caf5cf4c", "GJS_DEBUG_OUTPUT"=>"stderr", "LESSCLOSE"=>"/usr/bin/lesspipe %s %s", "XDG_SESSION_CLASS"=>"user", "TERM"=>"xterm-256color", "LESSOPEN"=>"| /usr/bin/lesspipe %s", "USER"=>"praveen", "RBENV_DIR"=>"/home/praveen/rails-project/alpha-blog", "GNOME_TERMINAL_SERVICE"=>":1.91", "DISPLAY"=>":0", "SHLVL"=>"3", "SENDMAIL_USERNAME"=>"jairockzz12@gmail.com", "QT_IM_MODULE"=>"ibus", "SENDMAIL_PASSWORD"=>"railstest", "RBENV_VERSION"=>"3.0.0", "XDG_RUNTIME_DIR"=>"/run/user/1000", "XDG_DATA_DIRS"=>"/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop", "PATH"=>"/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/bin:/home/praveen/.rbenv/versions/3.0.0/bin:/home/praveen/.rbenv/libexec:/home/praveen/.rbenv/plugins/ruby-build/bin:/home/praveen/.rbenv/shims:/home/praveen/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin", "GDMSESSION"=>"ubuntu", "MAIL_HOST"=>"localhost:3000", "DBUS_SESSION_BUS_ADDRESS"=>"unix:path=/run/user/1000/bus", "RUBYLIB"=>"/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.2.5/lib:/home/praveen/.rbenv/rbenv.d/exec/gem-rehash", "RBENV_ROOT"=>"/home/praveen/.rbenv", "OLDPWD"=>"/home/praveen/rails-project", "BUNDLER_ORIG_BUNDLE_BIN_PATH"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_BUNDLE_GEMFILE"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_BUNDLER_VERSION"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_GEM_HOME"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_GEM_PATH"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_MANPATH"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_PATH"=>"/home/praveen/.rbenv/versions/3.0.0/bin:/home/praveen/.rbenv/libexec:/home/praveen/.rbenv/plugins/ruby-build/bin:/home/praveen/.rbenv/plugins/ruby-build/bin:/home/praveen/.rbenv/shims:/home/praveen/.rbenv/bin:/home/praveen/.rbenv/plugins/ruby-build/bin:/home/praveen/.rbenv/shims:/home/praveen/.rbenv/bin:/home/praveen/.rbenv/plugins/ruby-build/bin:/home/praveen/.rbenv/shims:/home/praveen/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin", "BUNDLER_ORIG_RB_USER_INSTALL"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLER_ORIG_RUBYLIB"=>"/home/praveen/.rbenv/rbenv.d/exec/gem-rehash:", "BUNDLER_ORIG_RUBYOPT"=>"BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL", "BUNDLE_BIN_PATH"=>"/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.2.5/exe/bundle", "BUNDLE_GEMFILE"=>"/home/praveen/rails-project/alpha-blog/Gemfile", "BUNDLER_VERSION"=>"2.2.5", "RUBYOPT"=>"-r/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.2.5/lib/bundler/setup", "GEM_PATH"=>"/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0:/home/praveen/.local/share/gem/ruby/3.0.0", "GEM_HOME"=>"/home/praveen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0", "RAILS_ENV"=>"development", "SENDGRID_USERNAME"=>"praveenrk189@gmail.com", "SENDGRID_PASSWORD"=>"praveenrksendgrid", "SENDGRID_API_KEY"=>"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"}
+=> [36m[1mnil[0m
+[6n[1Girb(main):002:0> [K[1G[18G[1Girb(main):002:0> s[K[1G[19G[1Girb(main):002:0> sp[K[1G[20G[1Girb(main):002:0> spr[K[1G[21G[1Girb(main):002:0> sp[K[1G[20G[1Girb(main):002:0> s[K[1G[19G[1Girb(main):002:0> [K[1G[18G[1Girb(main):002:0> e[K[1G[19G[1Girb(main):002:0> ex[K[1G[20G[1Girb(main):002:0> exi[K[1G[21G[1Girb(main):002:0> exit[K[1G[22G[1G[1Girb(main):002:0> exit[K[1G[22G[1Girb(main):002:0> exit[K[1G[1G[1S[1G[K[1G]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ spring stop
+Spring is not running
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run spring stop
+Running [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m...
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m starting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9891 (Free)
+[G[1A[JRunning [36m[1mspring stop[22m[39m on [38;5;104m⬢ praveenblog[0m... up, run.9891 (Free)
+bash: spring: command not found
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run spring stop[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C
+ [33m›[39m   Warning: [33mspring[39m is not a heroku command.
+Did you mean [94mdrains[39m? [y/n]: ^[[A^[[A
+ [31m›[39m   Error: Run [36m[1mheroku help[22m[39m for a list of available commands.
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku spring stop[4@run [C[C[C[C[C[C[C[C[C[C[C[11P[C[C[C[C[C[C[C[C[C[C[Cbundle exec rails console[11Pheroku restart[1Pconfig:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid[A]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid[A]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crestart[1Pconfig:add SENDGRID_USERNAME=praveenrk189@gmail.com SENDGRID_PASSWORD=praveenrksendgrid[A]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:get SENDGRID_PASSWORDUSERNAMErestart[Kun rake db:migrate
+Running [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m...
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m
+^[[A[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m starting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... up, run.1073 (Free)
+^[[A^[[B]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rake db:migrate[8Pspring stop[4@run [C[C[C[C[C[C[C[C[C[C[C[11P[C[C[C[C[C[C[C[C[C[C[Cbundle exec rails console[11Pheroku restart0
+ [33m›[39m   Warning: [33mrestart0[39m is not a heroku command.
+Did you mean [94mrestart[39m? [y/n]: ^[[A
+ [31m›[39m   Error: Run [36m[1mheroku help[22m[39m for a list of available commands.
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku restart0[K
+[G[2K[?25lRestarting dynos on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[37C[38;5;104m⢿[0m[1B[G[2K[1A[37C[38;5;104m⡿[0m[1B[G[2K[1A[37C[38;5;104m⣟[0m[1B[G[2K[1A[37C[38;5;104m⣯[0m[1B[G[2K[1A[37C[38;5;104m⣷[0m[1B[G[2K[1A[37C[38;5;104m⣾[0m[1B[G[2K[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[JRestarting dynos on [38;5;104m⬢ praveenblog[0m... done
+[?25h[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   app/models/user.rb[m
+	[31mmodified:   config/environments/production.rb[m
+	[31mmodified:   config/initializers/smtp.rb[m
+	[31mmodified:   install[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;pr)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.1073 (Free)
+[G[1A[JRunning [36m[1mrake db:migrate[22m[39m on [38;5;104m⬢ praveenblog[0m... up, run.1073 (Free)
+^[[A^[[B]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rake db:migrate[8Pspring stop[4@run [C[C[C[C[C[C[C[C[C[C[C[11P[C[C[C[C[C[C[C[C[C[C[Cbundle exec rails console[11Pheroku restart0
+ [33m›[39m   Warning: [33mrestart0[39m is not a heroku command.
+Did you mean [94mrestart[39m? [y/n]: ^[[A
+ [31m›[39m   Error: Run [36m[1mheroku help[22m[39m for a list of available commands.
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku restart0[K
+[G[2K[?25lRestarting dynos on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[37C[38;5;104m⢿[0m[1B[G[2K[1A[37C[38;5;104m⡿[0m[1B[G[2K[1A[37C[38;5;104m⣟[0m[1B[G[2K[1A[37C[38;5;104m⣯[0m[1B[G[2K[1A[37C[38;5;104m⣷[0m[1B[G[2K[1A[37C[38;5;104m⣾[0m[1B[G[2K[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[JRestarting dynos on [38;5;104m⬢ praveenblog[0m... done
+[?25h[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   app/models/user.rb[m
+	[31mmodified:   config/environments/production.rb[m
+	[31mmodified:   config/initializers/smtp.rb[m
+	[31mmodified:   install[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
