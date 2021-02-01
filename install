@@ -957,32 +957,6 @@ Installing plugin [36mheroku-config[39m...
 [G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣟[0m [4/4] Building fresh packages...
 [G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣯[0m [4/4] Building fresh packages...
 [G[1A[JInstalling plugin [36mheroku-config[39m... installed v1.5.4
-]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:pupackages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣷[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣾[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣽[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣻[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⢿[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⡿[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣟[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣯[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣷[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣾[0m [2/4] Fetching packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣽[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣻[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⢿[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⡿[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣟[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣯[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣷[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣾[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣽[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣻[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⢿[0m [3/4] Linking dependencies...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⡿[0m [4/4] Building fresh packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣟[0m [4/4] Building fresh packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... [38;5;104m⣯[0m [4/4] Building fresh packages...
-[G[1A[JInstalling plugin [36mheroku-config[39m... installed v1.5.4
 ]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku config:push
 Successfully wrote settings to Heroku!
 [?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git status
@@ -1008,3 +982,515 @@ Changes not staged for commit:
 	[31mmodified:   app/views/devise/registrations/edit.html.erb[m
 	[31mmodified:   app/views/devise/registrations/new.html.erb[m
 	[31mmodified:   app/views/devise/sessions/new.html.erb[m
+	[31mmodified:   app/views/devise/shared/_links.html.erb[m
+	[31mmodified:   app/views/devise/unlocks/new.html.erb[m
+	[31mmodified:   app/views/layouts/_navigation.html.erb[m
+	[31mmodified:   config/environments/development.rb[m
+	[31mmodified:   config/initializers/devise.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31minstall[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git add -a[KA
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git commit -m "Designed devise pages [K| User add comments"[K| mailer configured"
+[main 5d50e15] Designed devise pages| User add comments| mailer configured
+ 22 files changed, 1326 insertions(+), 245 deletions(-)
+ rewrite app/views/articles/_article.html.erb (92%)
+ rewrite app/views/categories/index.html.erb (74%)
+ rewrite app/views/devise/confirmations/new.html.erb (97%)
+ rewrite app/views/devise/passwords/edit.html.erb (96%)
+ rewrite app/views/devise/passwords/new.html.erb (97%)
+ rewrite app/views/devise/unlocks/new.html.erb (97%)
+ create mode 100644 install
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git push
+Username for 'https://github.com': PraveenMSD
+Password for 'https://PraveenMSD@github.com': 
+Enumerating objects: 84, done.
+Counting objects:   1% (1/84)Counting objects:   2% (2/84)Counting objects:   3% (3/84)Counting objects:   4% (4/84)Counting objects:   5% (5/84)Counting objects:   7% (6/84)Counting objects:   8% (7/84)Counting objects:   9% (8/84)Counting objects:  10% (9/84)Counting objects:  11% (10/84)Counting objects:  13% (11/84)Counting objects:  14% (12/84)Counting objects:  15% (13/84)Counting objects:  16% (14/84)Counting objects:  17% (15/84)Counting objects:  19% (16/84)Counting objects:  20% (17/84)Counting objects:  21% (18/84)Counting objects:  22% (19/84)Counting objects:  23% (20/84)Counting objects:  25% (21/84)Counting objects:  26% (22/84)Counting objects:  27% (23/84)Counting objects:  28% (24/84)Counting objects:  29% (25/84)Counting objects:  30% (26/84)Counting objects:  32% (27/84)Counting objects:  33% (28/84)Counting objects:  34% (29/84)Counting objects:  35% (30/84)Counting objects:  36% (31/84)Counting objects:  38% (32/84)Counting objects:  39% (33/84)Counting objects:  40% (34/84)Counting objects:  41% (35/84)Counting objects:  42% (36/84)Counting objects:  44% (37/84)Counting objects:  45% (38/84)Counting objects:  46% (39/84)Counting objects:  47% (40/84)Counting objects:  48% (41/84)Counting objects:  50% (42/84)Counting objects:  51% (43/84)Counting objects:  52% (44/84)Counting objects:  53% (45/84)Counting objects:  54% (46/84)Counting objects:  55% (47/84)Counting objects:  57% (48/84)Counting objects:  58% (49/84)Counting objects:  59% (50/84)Counting objects:  60% (51/84)Counting objects:  61% (52/84)Counting objects:  63% (53/84)Counting objects:  64% (54/84)Counting objects:  65% (55/84)Counting objects:  66% (56/84)Counting objects:  67% (57/84)Counting objects:  69% (58/84)Counting objects:  70% (59/84)Counting objects:  71% (60/84)Counting objects:  72% (61/84)Counting objects:  73% (62/84)Counting objects:  75% (63/84)Counting objects:  76% (64/84)Counting objects:  77% (65/84)Counting objects:  78% (66/84)Counting objects:  79% (67/84)Counting objects:  80% (68/84)Counting objects:  82% (69/84)Counting objects:  83% (70/84)Counting objects:  84% (71/84)Counting objects:  85% (72/84)Counting objects:  86% (73/84)Counting objects:  88% (74/84)Counting objects:  89% (75/84)Counting objects:  90% (76/84)Counting objects:  91% (77/84)Counting objects:  92% (78/84)Counting objects:  94% (79/84)Counting objects:  95% (80/84)Counting objects:  96% (81/84)Counting objects:  97% (82/84)Counting objects:  98% (83/84)Counting objects: 100% (84/84)Counting objects: 100% (84/84), done.
+Delta compression using up to 4 threads
+Compressing objects:   2% (1/43)Compressing objects:   4% (2/43)Compressing objects:   6% (3/43)Compressing objects:   9% (4/43)Compressing objects:  11% (5/43)Compressing objects:  13% (6/43)Compressing objects:  16% (7/43)Compressing objects:  18% (8/43)Compressing objects:  20% (9/43)Compressing objects:  23% (10/43)Compressing objects:  25% (11/43)Compressing objects:  27% (12/43)Compressing objects:  30% (13/43)Compressing objects:  32% (14/43)Compressing objects:  34% (15/43)Compressing objects:  37% (16/43)Compressing objects:  39% (17/43)Compressing objects:  41% (18/43)Compressing objects:  44% (19/43)Compressing objects:  46% (20/43)Compressing objects:  48% (21/43)Compressing objects:  51% (22/43)Compressing objects:  53% (23/43)Compressing objects:  55% (24/43)Compressing objects:  58% (25/43)Compressing objects:  60% (26/43)Compressing objects:  62% (27/43)Compressing objects:  65% (28/43)Compressing objects:  67% (29/43)Compressing objects:  69% (30/43)Compressing objects:  72% (31/43)Compressing objects:  74% (32/43)Compressing objects:  76% (33/43)Compressing objects:  79% (34/43)Compressing objects:  81% (35/43)Compressing objects:  83% (36/43)Compressing objects:  86% (37/43)Compressing objects:  88% (38/43)Compressing objects:  90% (39/43)Compressing objects:  93% (40/43)Compressing objects:  95% (41/43)Compressing objects:  97% (42/43)Compressing objects: 100% (43/43)Compressing objects: 100% (43/43), done.
+Writing objects:   2% (1/46)Writing objects:   4% (2/46)Writing objects:   6% (3/46)Writing objects:   8% (4/46)Writing objects:  10% (5/46)Writing objects:  13% (6/46)Writing objects:  15% (7/46)Writing objects:  17% (8/46)Writing objects:  19% (9/46)Writing objects:  21% (10/46)Writing objects:  23% (11/46)Writing objects:  26% (12/46)Writing objects:  28% (13/46)Writing objects:  30% (14/46)Writing objects:  32% (15/46)Writing objects:  34% (16/46)Writing objects:  36% (17/46)Writing objects:  39% (18/46)Writing objects:  41% (19/46)Writing objects:  43% (20/46)Writing objects:  45% (21/46)Writing objects:  47% (22/46)Writing objects:  50% (23/46)Writing objects:  52% (24/46)Writing objects:  54% (25/46)Writing objects:  58% (27/46)Writing objects:  60% (28/46)Writing objects:  65% (30/46)Writing objects:  67% (31/46)Writing objects:  69% (32/46)Writing objects:  71% (33/46)Writing objects:  73% (34/46)Writing objects:  76% (35/46)Writing objects:  78% (36/46)Writing objects:  80% (37/46)Writing objects:  82% (38/46)Writing objects:  84% (39/46)Writing objects:  86% (40/46)Writing objects:  89% (41/46)Writing objects:  91% (42/46)Writing objects:  93% (43/46)Writing objects:  95% (44/46)Writing objects:  97% (45/46)Writing objects: 100% (46/46)Writing objects: 100% (46/46), 15.12 KiB | 1.37 MiB/s, done.
+Total 46 (delta 30), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/30)[Kremote: Resolving deltas:   3% (1/30)[Kremote: Resolving deltas:   6% (2/30)[Kremote: Resolving deltas:  10% (3/30)[Kremote: Resolving deltas:  13% (4/30)[Kremote: Resolving deltas:  16% (5/30)[Kremote: Resolving deltas:  20% (6/30)[Kremote: Resolving deltas:  23% (7/30)[Kremote: Resolving deltas:  26% (8/30)[Kremote: Resolving deltas:  30% (9/30)[Kremote: Resolving deltas:  33% (10/30)[Kremote: Resolving deltas:  36% (11/30)[Kremote: Resolving deltas:  40% (12/30)[Kremote: Resolving deltas:  43% (13/30)[Kremote: Resolving deltas:  46% (14/30)[Kremote: Resolving deltas:  50% (15/30)[Kremote: Resolving deltas:  53% (16/30)[Kremote: Resolving deltas:  56% (17/30)[Kremote: Resolving deltas:  60% (18/30)[Kremote: Resolving deltas:  63% (19/30)[Kremote: Resolving deltas:  66% (20/30)[Kremote: Resolving deltas:  70% (21/30)[Kremote: Resolving deltas:  73% (22/30)[Kremote: Resolving deltas:  76% (23/30)[Kremote: Resolving deltas:  80% (24/30)[Kremote: Resolving deltas:  83% (25/30)[Kremote: Resolving deltas:  86% (26/30)[Kremote: Resolving deltas:  90% (27/30)[Kremote: Resolving deltas:  93% (28/30)[Kremote: Resolving deltas:  96% (29/30)[Kremote: Resolving deltas: 100% (30/30)[Kremote: Resolving deltas: 100% (30/30), completed with 23 local objects.[K
+To https://github.com/PraveenMSD/alpha-blog.git
+   d773f24..5d50e15  main -> main
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ git push heroku main
+Enumerating objects: 84, done.
+Counting objects:   1% (1/84)Counting objects:   2% (2/84)Counting objects:   3% (3/84)Counting objects:   4% (4/84)Counting objects:   5% (5/84)Counting objects:   7% (6/84)Counting objects:   8% (7/84)Counting objects:   9% (8/84)Counting objects:  10% (9/84)Counting objects:  11% (10/84)Counting objects:  13% (11/84)Counting objects:  14% (12/84)Counting objects:  15% (13/84)Counting objects:  16% (14/84)Counting objects:  17% (15/84)Counting objects:  19% (16/84)Counting objects:  20% (17/84)Counting objects:  21% (18/84)Counting objects:  22% (19/84)Counting objects:  23% (20/84)Counting objects:  25% (21/84)Counting objects:  26% (22/84)Counting objects:  27% (23/84)Counting objects:  28% (24/84)Counting objects:  29% (25/84)Counting objects:  30% (26/84)Counting objects:  32% (27/84)Counting objects:  33% (28/84)Counting objects:  34% (29/84)Counting objects:  35% (30/84)Counting objects:  36% (31/84)Counting objects:  38% (32/84)Counting objects:  39% (33/84)Counting objects:  40% (34/84)Counting objects:  41% (35/84)Counting objects:  42% (36/84)Counting objects:  44% (37/84)Counting objects:  45% (38/84)Counting objects:  46% (39/84)Counting objects:  47% (40/84)Counting objects:  48% (41/84)Counting objects:  50% (42/84)Counting objects:  51% (43/84)Counting objects:  52% (44/84)Counting objects:  53% (45/84)Counting objects:  54% (46/84)Counting objects:  55% (47/84)Counting objects:  57% (48/84)Counting objects:  58% (49/84)Counting objects:  59% (50/84)Counting objects:  60% (51/84)Counting objects:  61% (52/84)Counting objects:  63% (53/84)Counting objects:  64% (54/84)Counting objects:  65% (55/84)Counting objects:  66% (56/84)Counting objects:  67% (57/84)Counting objects:  69% (58/84)Counting objects:  70% (59/84)Counting objects:  71% (60/84)Counting objects:  72% (61/84)Counting objects:  73% (62/84)Counting objects:  75% (63/84)Counting objects:  76% (64/84)Counting objects:  77% (65/84)Counting objects:  78% (66/84)Counting objects:  79% (67/84)Counting objects:  80% (68/84)Counting objects:  82% (69/84)Counting objects:  83% (70/84)Counting objects:  84% (71/84)Counting objects:  85% (72/84)Counting objects:  86% (73/84)Counting objects:  88% (74/84)Counting objects:  89% (75/84)Counting objects:  90% (76/84)Counting objects:  91% (77/84)Counting objects:  92% (78/84)Counting objects:  94% (79/84)Counting objects:  95% (80/84)Counting objects:  96% (81/84)Counting objects:  97% (82/84)Counting objects:  98% (83/84)Counting objects: 100% (84/84)Counting objects: 100% (84/84), done.
+Delta compression using up to 4 threads
+Compressing objects:   2% (1/43)Compressing objects:   4% (2/43)Compressing objects:   6% (3/43)Compressing objects:   9% (4/43)Compressing objects:  11% (5/43)Compressing objects:  13% (6/43)Compressing objects:  16% (7/43)Compressing objects:  18% (8/43)Compressing objects:  20% (9/43)Compressing objects:  23% (10/43)Compressing objects:  25% (11/43)Compressing objects:  27% (12/43)Compressing objects:  30% (13/43)Compressing objects:  32% (14/43)Compressing objects:  34% (15/43)Compressing objects:  37% (16/43)Compressing objects:  39% (17/43)Compressing objects:  41% (18/43)Compressing objects:  44% (19/43)Compressing objects:  46% (20/43)Compressing objects:  48% (21/43)Compressing objects:  51% (22/43)Compressing objects:  53% (23/43)Compressing objects:  55% (24/43)Compressing objects:  58% (25/43)Compressing objects:  60% (26/43)Compressing objects:  62% (27/43)Compressing objects:  65% (28/43)Compressing objects:  67% (29/43)Compressing objects:  69% (30/43)Compressing objects:  72% (31/43)Compressing objects:  74% (32/43)Compressing objects:  76% (33/43)Compressing objects:  79% (34/43)Compressing objects:  81% (35/43)Compressing objects:  83% (36/43)Compressing objects:  86% (37/43)Compressing objects:  88% (38/43)Compressing objects:  90% (39/43)Compressing objects:  93% (40/43)Compressing objects:  95% (41/43)Compressing objects:  97% (42/43)Compressing objects: 100% (43/43)Compressing objects: 100% (43/43), done.
+Writing objects:   2% (1/46)Writing objects:   4% (2/46)Writing objects:   6% (3/46)Writing objects:   8% (4/46)Writing objects:  10% (5/46)Writing objects:  13% (6/46)Writing objects:  15% (7/46)Writing objects:  17% (8/46)Writing objects:  19% (9/46)Writing objects:  21% (10/46)Writing objects:  23% (11/46)Writing objects:  26% (12/46)Writing objects:  28% (13/46)Writing objects:  30% (14/46)Writing objects:  32% (15/46)Writing objects:  34% (16/46)Writing objects:  36% (17/46)Writing objects:  39% (18/46)Writing objects:  41% (19/46)Writing objects:  43% (20/46)Writing objects:  45% (21/46)Writing objects:  47% (22/46)Writing objects:  50% (23/46)Writing objects:  52% (24/46)Writing objects:  54% (25/46)Writing objects:  58% (27/46)Writing objects:  60% (28/46)Writing objects:  65% (30/46)Writing objects:  67% (31/46)Writing objects:  69% (32/46)Writing objects:  71% (33/46)Writing objects:  73% (34/46)Writing objects:  76% (35/46)Writing objects:  78% (36/46)Writing objects:  80% (37/46)Writing objects:  82% (38/46)Writing objects:  84% (39/46)Writing objects:  86% (40/46)Writing objects:  89% (41/46)Writing objects:  91% (42/46)Writing objects:  93% (43/46)Writing objects:  95% (44/46)Writing objects:  97% (45/46)Writing objects: 100% (46/46)Writing objects: 100% (46/46), 15.12 KiB | 1.37 MiB/s, done.
+Total 46 (delta 30), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Building on the Heroku-20 stack[K
+remote: -----> Ruby app detected[K
+remote: -----> Installing bundler 2.1.4[K
+remote: -----> Removing BUNDLED WITH version in the Gemfile.lock[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-3.0.0[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        Removing `Gemfile.lock` because it was generated on Windows.[K
+remote:        Bundler will do a full resolve so native gems are handled properly.[K
+remote:        This may result in unexpected gem versions being used in your app.[K
+remote:        In rare occasions Bundler may not be able to resolve your dependencies at all.[K
+remote:        [K
+remote:        https://devcenter.heroku.com/articles/bundler-windows-gemfile[K
+remote: 
+remote: -----> Installing dependencies using bundler 2.1.4[K
+remote:        Running: BUNDLE_WITHOUT='development:test' BUNDLE_PATH=vendor/bundle BUNDLE_BIN=vendor/bundle/bin bundle install -j4[K
+remote:        Fetching gem metadata from https://rubygems.org/...........[K
+remote:        Fetching gem metadata from https://rubygems.org/.[K
+remote:        Resolving dependencies.......[K
+remote:        Using rake 13.0.3[K
+remote:        Using concurrent-ruby 1.1.8[K
+remote:        Using minitest 5.14.3[K
+remote:        Using zeitwerk 2.4.2[K
+remote:        Using builder 3.2.4[K
+remote:        Using erubi 1.10.0[K
+remote:        Using racc 1.5.2[K
+remote:        Using crass 1.0.6[K
+remote:        Using rack 2.2.3[K
+remote:        Using nio4r 2.5.4[K
+remote:        Using websocket-extensions 0.1.5[K
+remote:        Using mimemagic 0.3.5[K
+remote:        Using mini_mime 1.0.2[K
+remote:        Using bcrypt 3.1.16[K
+remote:        Fetching msgpack 1.4.2[K
+remote:        Using bundler 2.2.3[K
+remote:        Using i18n_data 0.10.0[K
+remote:        Using sixarm_ruby_unaccent 1.2.0[K
+remote:        Using unicode_utils 1.4.0[K
+remote:        Using orm_adapter 0.5.0[K
+remote:        Using method_source 1.0.0[K
+remote:        Using thor 1.1.0[K
+remote:        Using dotenv 2.7.6[K
+remote:        Using ffi 1.14.2[K
+remote:        Using tilt 2.0.10[K
+remote:        Using pg 1.2.3[K
+remote:        Using select2-rails 4.0.13[K
+remote:        Using semantic_range 2.3.1[K
+remote:        Using turbolinks-source 5.2.0[K
+remote:        Using will_paginate 3.3.0[K
+remote:        Using i18n 1.8.7[K
+remote:        Using tzinfo 2.0.4[K
+remote:        Using rack-test 1.1.0[K
+remote:        Using marcel 0.3.3[K
+remote:        Using warden 1.2.9[K
+remote:        Using sprockets 4.0.2[K
+remote:        Using puma 5.2.0[K
+remote:        Using rack-proxy 0.6.5[K
+remote:        Using nokogiri 1.11.1 (x86_64-linux)[K
+remote:        Using websocket-driver 0.7.3[K
+remote:        Using mail 2.7.1[K
+remote:        Using countries 3.0.1[K
+remote:        Using sort_alphabetical 1.1.0[K
+remote:        Using activesupport 6.1.1[K
+remote:        Using loofah 2.9.0[K
+remote:        Using country_select 4.0.0[K
+remote:        Using sassc 2.4.0[K
+remote:        Using turbolinks 5.2.1[K
+remote:        Using rails-html-sanitizer 1.3.0
+remote:        Using rails-dom-testing 2.0.3[K
+remote:        Using globalid 0.4.2[K
+remote:        Using activemodel 6.1.1[K
+remote:        Using jbuilder 2.11.2[K
+remote:        Using activejob 6.1.1[K
+remote:        Using activerecord 6.1.1[K
+remote:        Using actionview 6.1.1[K
+remote:        Using actionpack 6.1.1[K
+remote:        Using actioncable 6.1.1[K
+remote:        Using activestorage 6.1.1[K
+remote:        Using actionmailer 6.1.1[K
+remote:        Using railties 6.1.1[K
+remote:        Installing msgpack 1.4.2 with native extensions[K
+remote:        Using sprockets-rails 3.2.2[K
+remote:        Using actionmailbox 6.1.1[K
+remote:        Using actiontext 6.1.1[K
+remote:        Using responders 3.0.1[K
+remote:        Using dotenv-rails 2.7.6[K
+remote:        Using webpacker 5.2.1[K
+remote:        Using sassc-rails 2.1.2[K
+remote:        Using rails 6.1.1[K
+remote:        Using devise 4.7.3[K
+remote:        Using sass-rails 6.0.0[K
+remote:        Using intl-tel-input-rails 12.3.0[K
+remote:        Using bootsnap 1.6.0[K
+remote:        Bundle complete! 23 Gemfile dependencies, 73 gems now installed.[K
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into `./vendor/bundle`[K
+remote:        Removing bundler (2.1.4)[K
+remote:        Removing msgpack (1.4.1)[K
+remote:        Bundle completed (10.74s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Installing node-v12.16.2-linux-x64[K
+remote: -----> Installing yarn-v1.22.4[K
+remote: -----> Detecting rake tasks[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        yarn install v1.22.4[K
+remote:        [1/4] Resolving packages...[K
+remote:        [2/4] Fetching packages...[K
+remote:        info fsevents@2.1.3: The platform "linux" is incompatible with this module.[K
+remote:        info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.[K
+remote:        info fsevents@1.2.13: The platform "linux" is incompatible with this module.[K
+remote:        info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.[K
+remote:        [3/4] Linking dependencies...[K
+remote:        [1;33mwarning[m " > webpack-dev-server@3.11.0" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".[K
+remote:        [1;33mwarning[m "webpack-dev-server > webpack-dev-middleware@3.7.3" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".[K
+remote:        [4/4] Building fresh packages...[K
+remote:        Done in 30.34s.[K
+remote:        I, [2021-02-01T07:05:10.742451 #478]  INFO -- : Writing /tmp/build_6b79f75b/public/assets/application-2b003d15f4265ebad2db9818e819d5fa432e1f7302f18a7cd67593076a823af5.css[K
+remote:        I, [2021-02-01T07:05:10.743090 #478]  INFO -- : Writing /tmp/build_6b79f75b/public/assets/application-2b003d15f4265ebad2db9818e819d5fa432e1f7302f18a7cd67593076a823af5.css.gz[K
+remote:        I, [2021-02-01T07:05:10.744685 #478]  INFO -- : Writing /tmp/build_6b79f75b/public/assets/custom-c3a35cbaab968c553d12e2a6c437547e70a72c69c6ce8047129ab7065f49b891.css[K
+remote:        I, [2021-02-01T07:05:10.745772 #478]  INFO -- : Writing /tmp/build_6b79f75b/public/assets/custom-c3a35cbaab968c553d12e2a6c437547e70a72c69c6ce8047129ab7065f49b891.css.gz[K
+remote:        Compiling...[K
+remote:        Compiled all packs in /tmp/build_6b79f75b/public/packs[K
+remote:        Hash: 2b576508b17cafa92dad[K
+remote:        Version: webpack 4.44.2[K
+remote:        Time: 55087ms[K
+remote:        Built at: 02/01/2021 7:06:07 AM[K
+remote:                                                       Asset        Size                  Chunks                                Chunk Names[K
+remote:                                css/application-fcc19837.css    32.8 KiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [immutable]         application[K
+remote:                             css/application-fcc19837.css.br    3.25 KiB                          [emitted]                     [K
+remote:                             css/application-fcc19837.css.gz    4.43 KiB                          [emitted]                     [K
+remote:                                    css/country-b5505a27.css    14.1 KiB                       3  [emitted] [immutable]         country[K
+remote:                                 css/country-b5505a27.css.br    1.55 KiB                          [emitted]                     [K
+remote:                                 css/country-b5505a27.css.gz    1.87 KiB                          [emitted]                     [K
+remote:                               css/intlTelInput-b50f908f.css    18.7 KiB                       4  [emitted] [immutable]         intlTelInput[K
+remote:                            css/intlTelInput-b50f908f.css.br    1.81 KiB                          [emitted]                     [K
+remote:                            css/intlTelInput-b50f908f.css.gz    2.78 KiB                          [emitted]                     [K
+remote:                      js/application-4e97001789cfc09db43d.js     1.5 MiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [immutable]  [big]  application[K
+remote:          js/application-4e97001789cfc09db43d.js.LICENSE.txt    2.59 KiB                          [emitted]                     [K
+remote:                   js/application-4e97001789cfc09db43d.js.br     445 KiB                          [emitted]              [big]  [K
+remote:                   js/application-4e97001789cfc09db43d.js.gz     539 KiB                          [emitted]              [big]  [K
+remote:                  js/application-4e97001789cfc09db43d.js.map    2.72 MiB  0, 1, 2, 3, 4, 6, 7, 8  [emitted] [dev]               application[K
+remote:               js/application-4e97001789cfc09db43d.js.map.br     700 KiB                          [emitted]              [big]  [K
+remote:               js/application-4e97001789cfc09db43d.js.map.gz     847 KiB                          [emitted]              [big]  [K
+remote:                         js/articles-e2bc8d40a4d471df3019.js    89.7 KiB                       1  [emitted] [immutable]         articles[K
+remote:             js/articles-e2bc8d40a4d471df3019.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                      js/articles-e2bc8d40a4d471df3019.js.br      28 KiB                          [emitted]                     [K
+remote:                      js/articles-e2bc8d40a4d471df3019.js.gz      31 KiB                          [emitted]                     [K
+remote:                     js/articles-e2bc8d40a4d471df3019.js.map     460 KiB                       1  [emitted] [dev]               articles[K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                         js/category-e71fbe98044f0d47fd05.js    89.7 KiB                       2  [emitted] [immutable]         category[K
+remote:             js/category-e71fbe98044f0d47fd05.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.br      28 KiB                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.gz      31 KiB                          [emitted]                     [K
+remote:                     js/category-e71fbe98044f0d47fd05.js.map     460 KiB                       2  [emitted] [dev]               category[K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                          js/country-367852358cb54214a5af.js     162 KiB                       3  [emitted] [immutable]         country[K
+remote:              js/country-367852358cb54214a5af.js.LICENSE.txt   827 bytes                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.br    43.7 KiB                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.gz    49.8 KiB                          [emitted]                     [K
+remote:                      js/country-367852358cb54214a5af.js.map     715 KiB                       3  [emitted] [dev]               country[K
+remote:                   js/country-367852358cb54214a5af.js.map.br     167 KiB                          [emitted]                     [K
+remote:                   js/country-367852358cb54214a5af.js.map.gz     197 KiB                          [emitted]                     [K
+remote:                     js/intlTelInput-87b6766f38d06d02d814.js     126 KiB                       4  [emitted] [immutable]         intlTelInput[K
+remote:         js/intlTelInput-87b6766f38d06d02d814.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                  js/intlTelInput-87b6766f38d06ticles-e2bc8d40a4d471df3019.js.map     460 KiB                       1  [emitted] [dev]               articles[K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/articles-e2bc8d40a4d471df3019.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                         js/category-e71fbe98044f0d47fd05.js    89.7 KiB                       2  [emitted] [immutable]         category[K
+remote:             js/category-e71fbe98044f0d47fd05.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.br      28 KiB                          [emitted]                     [K
+remote:                      js/category-e71fbe98044f0d47fd05.js.gz      31 KiB                          [emitted]                     [K
+remote:                     js/category-e71fbe98044f0d47fd05.js.map     460 KiB                       2  [emitted] [dev]               category[K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.br     119 KiB                          [emitted]                     [K
+remote:                  js/category-e71fbe98044f0d47fd05.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                          js/country-367852358cb54214a5af.js     162 KiB                       3  [emitted] [immutable]         country[K
+remote:              js/country-367852358cb54214a5af.js.LICENSE.txt   827 bytes                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.br    43.7 KiB                          [emitted]                     [K
+remote:                       js/country-367852358cb54214a5af.js.gz    49.8 KiB                          [emitted]                     [K
+remote:                      js/country-367852358cb54214a5af.js.map     715 KiB                       3  [emitted] [dev]               country[K
+remote:                   js/country-367852358cb54214a5af.js.map.br     167 KiB                          [emitted]                     [K
+remote:                   js/country-367852358cb54214a5af.js.map.gz     197 KiB                          [emitted]                     [K
+remote:                     js/intlTelInput-87b6766f38d06d02d814.js     126 KiB                       4  [emitted] [immutable]         intlTelInput[K
+remote:         js/intlTelInput-87b6766f38d06d02d814.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                  js/intlTelInput-87b6766f38d06d02d814.js.br    37.2 KiB                          [emitted]                     [K
+remote:                  js/intlTelInput-87b6766f38d06d02d814.js.gz    41.7 KiB                          [emitted]                     [K
+remote:                 js/intlTelInput-87b6766f38d06d02d814.js.map     571 KiB                       4  [emitted] [dev]               intlTelInput[K
+remote:              js/intlTelInput-87b6766f38d06d02d814.js.map.br     144 KiB                          [emitted]                     [K
+remote:              js/intlTelInput-87b6766f38d06d02d814.js.map.gz     170 KiB                          [emitted]                     [K
+remote:                    js/intlbootstrap-8d56149815c24be32766.js    90.3 KiB                       5  [emitted] [immutable]         intlbootstrap[K
+remote:        js/intlbootstrap-8d56149815c24be32766.js.LICENSE.txt   489 bytes                          [emitted]                     [K
+remote:                 js/intlbootstrap-8d56149815c24be32766.js.br    28.2 KiB                          [emitted]                     [K
+remote:                 js/intlbootstrap-8d56149815c24be32766.js.gz    31.2 KiB                          [emitted]                     [K
+remote:                js/intlbootstrap-8d56149815c24be32766.js.map     462 KiB                       5  [emitted] [dev]                       js/signup-bbfcb56eddab34a5273b.js.gz    31.1 KiB                          [emitted]                     [K
+remote:                       js/signup-bbfcb56eddab34a5273b.js.map     461 KiB                       8  [emitted] [dev]               signup[K
+remote:                    js/signup-bbfcb56eddab34a5273b.js.map.br     119 KiB                          [emitted]                     [K
+remote:                    js/signup-bbfcb56eddab34a5273b.js.map.gz     139 KiB                          [emitted]                     [K
+remote:                        js/telephone-1c50939d9c657e1d3405.js  1000 bytes                       9  [emitted] [immutable]         telephone[K
+remote:                     js/telephone-1c50939d9c657e1d3405.js.br   460 bytes                          [emitted]                     [K
+remote:                     js/telephone-1c50939d9c657e1d3405.js.gz   515 bytes                          [emitted]                     [K
+remote:                    js/telephone-1c50939d9c657e1d3405.js.map    4.55 KiB                       9  [emitted] [dev]               telephone[K
+remote:                 js/telephone-1c50939d9c657e1d3405.js.map.br    1.55 KiB                          [emitted]                     [K
+remote:                 js/telephone-1c50939d9c657e1d3405.js.map.gz    1.72 KiB                          [emitted]                     [K
+remote:                                               manifest.json    3.67 KiB                          [emitted]                     [K
+remote:                                            manifest.json.br   592 bytes                          [emitted]                     [K
+remote:                                            manifest.json.gz   678 bytes                          [emitted]                     [K
+remote:                                media/img/flags-007b2705.png    69.2 KiB                          [emitted]                     [K
+remote:                             media/img/flags@2x-9d5328fb.png     170 KiB                          [emitted]                     [K
+remote:        Entrypoint application [big] = css/application-fcc19837.css js/application-4e97001789cfc09db43d.js js/application-4e97001789cfc09db43d.js.map[K
+remote:        Entrypoint articles = js/articles-e2bc8d40a4d471df3019.js js/articles-e2bc8d40a4d471df3019.js.map[K
+remote:        Entrypoint category = js/category-e71fbe98044f0d47fd05.js js/category-e71fbe98044f0d47fd05.js.map[K
+remote:        Entrypoint country = css/country-b5505a27.css js/country-367852358cb54214a5af.js js/country-367852358cb54214a5af.js.map[K
+remote:        Entrypoint intlbootstrap = js/intlbootstrap-8d56149815c24be32766.js js/intlbootstrap-8d56149815c24be32766.js.map[K
+remote:        Entrypoint intlTelInput = css/intlTelInput-b50f908f.css js/intlTelInput-87b6766f38d06d02d814.js js/intlTelInput-87b6766f38d06d02d814.js.map[K
+remote:        Entrypoint jquery = js/jquery-b959e2041894f73aa8da.js js/jquery-b959e2041894f73aa8da.js.map[K
+remote:        Entrypoint signin = js/signin-f94096fd972a8f2dd216.js js/signin-f94096fd972a8f2dd216.js.map[K
+remote:        Entrypoint signup = js/signup-bbfcb56eddab34a5273b.js js/signup-bbfcb56eddab34a5273b.js.map[K
+remote:        Entrypoint telephone = js/telephone-1c50939d9c657e1d3405.js js/telephone-1c50939d9c657e1d3405.js.map[K
+remote:         [1] (webpack)/buildin/module.js 552 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [built][K
+remote:         [3] (webpack)/buildin/global.js 905 bytes {0} [built][K
+remote:         [4] ./app/javascript/packs/jquery.validate.min.js 23.6 KiB {0} {6} [built][K
+remote:         [5] ./app/javascript/packs/articles.js 169 bytes {0} {1} [built][K
+remote:         [6] ./app/javascript/packs/signin.js 415 bytes {0} {7} [built][K
+remote:         [7] ./app/javascript/packs/signup.js 449 bytes {0} {8} [built][K
+remote:         [8] ./app/javascript/packs/country.js 156 bytes {0} {3} [built][K
+remote:        [11] ./app/javascript/packs/category.js 131 bytes {0} {2} [built][K
+remote:        [12] ./app/javascript/packs/intlTelInput.js 259 bytes {0} {4} [built][K
+remote:        [19] ./app/javascript/packs/application.js 753 bytes {0} [built][K
+remote:        [20] ./app/javascript/channels/index.js 205 bytes {0} [built][K
+remote:        [21] ./app/javascript/channels sync _channel\.js$ 160 bytes {0} [built][K
+remote:        [27] ./app/javascript/packs/intlbootstrap.js 905 bytes {5} [built]
+remote:        [28] ./app/javascript/packs/telephone.js 0 bytes {9} [built][K
+remote:            + 17 hidden modules[K
+remote:        [K
+remote:        [1;33mWARNING[m in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).[K
+remote:        This can impact web performance.[K
+remote:        Assets: [K
+remote:          js/application-4e97001789cfc09db43d.js (1.5 MiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.gz (539 KiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.map.gz (847 KiB)[K
+remote:          js/application-4e97001789cfc09db43d.js.br (445 KiB)
+remote:          js/application-4e97001789cfc09db43d.js.map.br (700 KiB)[K
+remote:        [K
+remote:        [1;33mWARNING[m in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.[K
+remote:        Entrypoints:
+remote:          application (1.54 MiB)[K
+remote:              css/application-fcc19837.css[K
+remote:              js/application-4e97001789cfc09db43d.js[K
+remote:        [K
+remote:        [K
+remote:        [1;33mWARNING[m in webpack performance recommendations: [K
+remote:        You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.[K
+remote:        For more info visit https://webpack.js.org/guides/code-splitting/[K
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/intl-tel-input/build/css/intlTelInput.css:[K
+remote:            Entrypoint mini-css-extract-plugin = *[K
+remote:               5 modules[K
+remote:        Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/select2/dist/css/select2.css:[K
+remote:            Entrypoint mini-css-extract-plugin = *[K
+remote:               2 modules[K
+remote:        [K
+remote:        Asset precompilation completed (96.57s)[K
+remote:        Cleaning assets[K
+remote:        Running: rake assets:clean[K
+remote:        I, [2021-02-01T07:06:09.683134 #624]  INFO -- : Removed application-c901db5d2b2624e607f7c7211460c19cc7b946aae024ec8e1933297fa5d35c8a.css[K
+remote:        I, [2021-02-01T07:06:09.684166 #624]  INFO -- : Removed custom-cecb9d17de36a9234e5174cea7a78450ec9dd415e27626cbac281393538c8a83.css[K
+remote: -----> Detecting rails configuration[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        Removing `Gemfile.lock` because it was generated on Windows.[K
+remote:        Bundler will do a full resolve so native gems are handled properly.[K
+remote:        This may result in unexpected gem versions being used in your app.[K
+remote:        In rare occasions Bundler may not be able to resolve your dependencies at all.[K
+remote:        [K
+remote:        https://devcenter.heroku.com/articles/bundler-windows-gemfile[K
+remote: 
+remote: [1m[33m###### WARNING:[0m[K
+remote: 
+remote:        No Procfile detected, using the default web server.[K
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
+remote: 
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types     -> (none)[K
+remote:        Default types for buildpack -> console, rake, web[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 121.4M[K
+remote: -----> Launching...[K
+remote:        Released v13[K
+remote:        https://praveenblog.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/praveenblog.git
+   d773f24..5d50e15  main -> main
+]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku restart
+[G[2K[?25lRestarting dynos on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m 
+[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[37C[38;5;104m⢿[0m[1B[G[2K[1A[37C[38;5;104m⡿[0m[1B[G[2K[1A[37C[38;5;104m⣟[0m[1B[G[2K[1A[37C[38;5;104m⣯[0m[1B[G[2K[1A[37C[38;5;104m⣷[0m[1B[G[2K[1A[37C[38;5;104m⣾[0m[1B[G[2K[1A[37C[38;5;104m⣽[0m[1B[G[2K[1A[37C[38;5;104m⣻[0m[1B[G[2K[1A[JRestarting dynos on [38;5;104m⬢ praveenblog[0m... done
+[?25h[?25h]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rails conole[K[K[Ksole
+Running [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m...
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m starting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣟[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣯[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣷[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣾[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣽[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⣻[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⢿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... [38;5;104m⡿[0m connecting, run.9987 (Free)
+[G[1A[JRunning [36m[1mrails console[22m[39m on [38;5;104m⬢ praveenblog[0m... up, run.9987 (Free)
+Loading production environment (Rails 6.1.1)
+[1G▽[6n[1G[K[6n[1Girb(main):001:0> [K[1G[18G[0m[1Girb(main):001:0> [34m[1m[4mU[0m[K[1G[19G[0m[1Girb(main):001:0> [34m[1m[4mUs[0m[K[1G[20G[0m[1Girb(main):001:0> [34m[1m[4mUse[0m[K[1G[21G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m[K[1G[22G[0m[1Girb(main):001:0* [34m[1m[4mUser[0m.[K[1G[23G[0m[1Girb(main):001:0* [34m[1m[4mUser[0m.l[K[1G[24G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.la[K[1G[25G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.las[K[1G[26G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[27G[1G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[27G[0m[1Girb(main):001:0> [34m[1m[4mUser[0m.last[K[1G[1G[1S[1G[K[1G[1mTraceback[m (most recent call last):
+[1mArgumentError ([4mwrong number of arguments (given 0, expected 1)[0;1m)[m
+[6n[1Girb(main):002:0> [K[1G[18G[0m[1Girb(main):002:0> [34m[1m[4mU[0m[K[1G[19G[0m[1Girb(main):002:0> [34m[1m[4mUs[0m[K[1G[20G[0m[1Girb(main):002:0> [34m[1m[4mUse[0m[K[1G[21G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m[K[1G[22G[0m[1Girb(main):002:0* [34m[1m[4mUser[0m.[K[1G[23G[0m[1Girb(main):002:0* [34m[1m[4mUser[0m.c[K[1G[24G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.co[K[1G[25G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.cou[K[1G[26G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.coun[K[1G[27G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[28G[1G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[28G[0m[1Girb(main):002:0> [34m[1m[4mUser[0m.count[K[1G[1G[1S[1G[K[1G=> [34m[1m6[0m
+[6n[1Girb(main):003:0> [K[1G[18G[1Girb(main):003:0> e[K[1G[19G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> ex[K[1G[20G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1G[1Girb(main):003:0> exit[K[1G[22G[1Girb(main):003:0> exit[K[1G[1G[1S[1G[K[1G]0;praveen@Lenovo-G50-45: ~/rails-project/alpha-blog[01;32mpraveen@Lenovo-G50-45[00m:[01;34m~/rails-project/alpha-blog[00m$ heroku run rails console[
