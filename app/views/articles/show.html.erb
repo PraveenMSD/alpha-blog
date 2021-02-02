@@ -1,13 +1,14 @@
 <div class="row justify-content-md-center mt-5">
-    <div class="col-8 mt-4">
+    <div class="col-9 mt-4">
         <div class="card text-center shadow mb-5 bg-white rounded">
-            <div class="card-header font-italic">
-                <h4><%= link_to @article.title, article_path(@article), class:"text-success"%></h4>
-                by <%= @article.user.username if @article.user %>
-                <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
-            </div>
+
             <div class="card-body">
-                <div class="card-text text-left"><%= simple_format(@article.description) %></div>
+                <strong class="p-2 author-name"> <%= @article.user.username %> </strong>
+                    <%= link_to article_path(@article.id) do %>
+                <h3 class="text-dark title mt-3 mb-2"><strong> <%= truncate(strip_tags(@article.title.to_s), length: 38) %> </strong></h3>
+                    <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+                    <% end %>
+                <div class="card-text text-left my-4"><%= simple_format(@article.description) %></div>
                 <% if signed_in? && (@article.user == current_user || current_user.admin?) %>
                     <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
                     <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger" %>
@@ -31,11 +32,11 @@
                             
                      
                                 <% if signed_in? %>
-                                <a class="btn btn-outline-success btn-addcomment" data-toggle="collapse" href="#addComment" role="button" aria-expanded="false" aria-controls="addComment">
+                                <a class="btn btn-outline-info btn-addcomment" data-toggle="collapse" href="#addComment" role="button" aria-expanded="false" aria-controls="addComment">
                                     Add comment
                                   </a>
                                   <div class="collapse" id="addComment">
-                                    <div class="card card-body">
+                                    <div class="card card-body my-4">
                                         <%= render 'comments/form' %>
                                     </div>
                                   </div>

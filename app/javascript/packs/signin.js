@@ -7,7 +7,7 @@ $( document ).on('turbolinks:load', function() {
         "user[password]": {
           required: true
         },
-        "user[confirm_password]": {
+        "user[password_confirmation]": {
           required: true,
           equalTo: "#user_password"
         },

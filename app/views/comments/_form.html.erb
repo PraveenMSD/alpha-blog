@@ -1,14 +1,13 @@
-
-    <h6>Add a comment</h6>
-    <%= form_for([@article, @article.comments.build]) do |f| %>
-        <div class= "text-center">
-            <%= f.hidden_field :commenter, value:current_user.username %>
-        </div>
-        <div class="text-center">
-            <%# f.label :comment %>
-            <%= f.text_area :body, class:"form-control" %>
-        </div>
-        <div class="my-3">
-            <%= f.submit %>
-        </div>
-    <% end %>
+<h6>Add a comment</h6>
+<%= form_for([@article, @article.comments.build]) do |f| %>
+    <div class= "text-center">
+        <%= f.hidden_field :commenter, value:current_user.username %>
+    </div>
+    <div class="text-center">
+        <%# f.label :comment %>
+        <%= f.text_area :body, class:"form-control" %>
+    </div>
+    <div class="my-3">
+        <%= f.submit class: "btn btn-outline-success" %>
+    </div>
+<% end %>
