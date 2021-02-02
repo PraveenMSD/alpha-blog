@@ -1,18 +1,20 @@
 <div class="row justify-content-center align-content-center">
-  <div class="col-12 col-xl-6 col-lg-8 col-md-8"> 
-    <span class="title page-title text-center d-block mb-3">Forgot your password?</span>
+  <div class="col-10 col-xl-6 col-lg-8 col-md-8"> 
+    <span class="title page-title text-center d-block mb-3 my-3">Forgot your password?</span>
 
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="card-body bg-light mb-3 shadow p-3 bg-white rounded" style="max-width: 60rem;">
 
-        <div class="form-group mb-2">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, class:"form-control", autofocus: true, autocomplete: "email" %>
-        </div>
+          <div class="form-group mb-2">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, class:"form-control", autofocus: true, autocomplete: "email" %>
+          </div>
 
-        <div class="my-3 text-center">
-          <%= f.submit "Send me reset password instructions", class:"btn btn-primary btn-block col-md-6" %>
+          <div class="my-3 col-12 text-center">
+            <%= f.submit "Send me reset password instructions", class:"btn btn-outline-info" %>
+          </div>
         </div>
       <% end %>
 

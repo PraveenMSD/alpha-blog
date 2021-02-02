@@ -104,15 +104,14 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   left: 360px;
 }
 
-.devise_signup {
-  top: -4px; 
-  left: 200px;
-}
+// .devise_signup {
+//   top: -4px; 
+//   left: 200px;
+// }
 
-.devise_signin {
-  top: -4px; 
-  left: 200px;
-}
+// .devise_signin {
+//   height: 20%;
+// }
 
 #user_about_card_city {
   position: relative; 
@@ -214,6 +213,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 #page-content {

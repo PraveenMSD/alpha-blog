@@ -10,9 +10,12 @@ $( document ).on('turbolinks:load', function() {
         "user[password]": {
           required: true
         },
-        "user[confirm_password]": {
+        "user[password_confirmation]": {
           required: true,
           equalTo: "#user_password"
+        },
+        "user[current_password]": {
+          required: true
         },
         "user[phone_number]": {
             required: true,

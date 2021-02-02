@@ -17,7 +17,7 @@
               <p class="my-2 card-text"><%= pluralize(category.articles.count, "article") %></p>
           </div>
           <div class="card-footer">
-            <small><%= (category.created_at).strftime("%B, %d, %Y") %></small>
+            <small><%= (category.created_at).strftime("%b %d, %Y") %></small>
           </div>
         </div>
       </div>

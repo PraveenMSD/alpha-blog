@@ -1,56 +1,3 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <%= link_to "BLOG", articles_path, class: "navbar-brand", id: "logo" %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Categories
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <% if signed_in? && current_user.admin? %>
-              <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
-            <% end %>  
-            <%= link_to "View categories", categories_path, class: "dropdown-item" %>
-          </div>
-        </li>
-
-        <% if signed_in? %>
-          <li class="nav-item">
-            <%# link_to "About", about_path, class: "nav-link" %>
-            <%= link_to "About", user_path(current_user), class: "nav-link" %>
-          </li>
-          <li>
-            <%# image_tag("user.png", id: "user_icon", :data => { :target => "#exampleModal", toggle: "modal", backdrop: "false"}) %>
-            <div class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= image_tag("user.png", id: "user_icon") %></a>
-              <ul class="dropdown-menu", id="user_dropdown_menu">
-                <div class="duser-name"><%= link_to current_user.username, user_path(current_user) %></div>
-                <hr>
-                <div class="duser-story"><%= link_to "Write a story", new_article_path %></div>
-                <hr>
-                <div class="duser-editprofile"><%= link_to "Edit profile", edit_user_path(current_user) %></div>
-                <hr>
-                <div class="duser-logout"><%= link_to "Sign out", destroy_user_session_path, class: 'dropdown-item', :method => :delete %></div>
-                <li role="separator" class="divider"></li>
-              </ul>
-            </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to 'Sign in', login_path, class:"nav-link" %>
-          </li>
-          <a class="btn btn-light mr-4" href="/users/sign_in">Sign in</a>
-          <a class="btn btn-dark mr-4" href="/users/sign_up">Get started</a>
-        <% end %>
-      </ul>
-    </div>
-</nav> -->
-
-
-
 <header class="blog-header py-3 bg-dark">
     <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-xl-8 col-lg-8 col-4 pt-1">
@@ -94,7 +41,7 @@
             </div>
             <% else %>
                 <!-- <a class="btn btn-light mr-4" id="signin_btn" href="/users/sign_in">Sign in</a> -->
-                <a class="btn btn-primary mr-4" id="signup_btn" href="/users/sign_up">Get started</a>
+                <a class="btn btn-primary mr-4" id="signup_btn" href="/users/sign_in">Get started</a>
             <% end %>
             
         </div>
