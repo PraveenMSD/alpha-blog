@@ -1,11 +1,12 @@
-<div class="container">
+<div class="container-fluid">
     <% if @articles.blank? %>
-        <div class="text-center">
-            <span style="font-size: 20px;">No articles were found..</span>
-        </div>
+        <!-- <div class="text-center my-3">
+            <span style="font-size: 20px;">No articles were found..</span><br>
+            <h5><%= link_to "Create one", new_article_path %></h5>
+        </div> -->
     <% else %>
         <div class="row" id="all-articles">
-            <% if signed_in? && @user == current_user %>
+            <% if signed_in? && @user == current_user && @articles.blank? %>
                 <div class="right-half">
                     <div class="user-card" >
                         <h3 class="card-title", id="user_about_card_name"><b><%= @user.username %></b></h3>
@@ -34,9 +35,7 @@
                         </div>
                         <div class="card-footer">
                             <small class="text-muted"><%= (article.created_at).strftime("%b %d, %Y")%></small>
-                            <!-- <button type="button" class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> -->
-                                <small><i class="fa fa-comments" aria-hidden="true"> </i><%= article.comments.count %></small>
-                            <!-- </button> -->
+                            <small><i class="fa fa-comments right" aria-hidden="true" id="commentIcon"></i><div id="commentCount"><%= article.comments.count %></div></small>
                         </div>
 
                     </div>
