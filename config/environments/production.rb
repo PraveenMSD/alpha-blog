@@ -9,13 +9,17 @@ Rails.application.configure do
   config.action_mailer.default :charset => "utf-8"
   
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: ENV["GMAIL_DOMAIN"],
-  authentication: "plain",
+  address: "smtp.yandex.com",
+  port: 465,
+  domain: ENV["YANDEX_DOMAIN"],
+  authentication: login,
+  smtp_enable_starttls_auto: true,
+  smtp_openssl_verify_mode: true,
+  user_name: ENV["YANDEX_USERNAME"],
+  password: ENV["YANDEX_PASSWORD"],
+  ssl: true,
   enable_starttls_auto: true,
-  user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"]
+  tls: true
   }
 
 
