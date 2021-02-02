@@ -27,8 +27,8 @@ gem 'select2-rails'
 gem 'country_select', '~> 4.0'
 gem 'intl-tel-input-rails'
 gem 'dotenv-rails'
-gem 'ckeditor', github: 'galetahub/ckeditor'
-gem 'slim-rails', github: 'slim-template/slim-rails'
+# gem 'ckeditor', github: 'galetahub/ckeditor'
+# gem 'slim-rails', github: 'slim-template/slim-rails'
 #gem 'jquery-validation-rails'
 
 # Use Active Storage variant
