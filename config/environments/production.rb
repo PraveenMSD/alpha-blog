@@ -12,7 +12,7 @@ Rails.application.configure do
   address: "smtp.yandex.com",
   port: 465,
   domain: ENV["YANDEX_DOMAIN"],
-  authentication: login,
+  authentication: "login",
   smtp_enable_starttls_auto: true,
   smtp_openssl_verify_mode: true,
   user_name: ENV["YANDEX_USERNAME"],
