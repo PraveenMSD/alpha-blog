@@ -13,11 +13,10 @@
           </div>
 
           <div class="my-3 col-12 text-center">
-            <%= f.submit "Resend confirmation instructions",class:"btn btn-outline-info text-center" %>
+            <%= f.submit "Resend confirmation instructions",class:"btn btn-outline-info text-center" %><br>
+            <%= render "devise/shared/links" %>
           </div>
         </div>
       <% end %>
-
-      <%= render "devise/shared/links" %>
   </div>
 </div>
