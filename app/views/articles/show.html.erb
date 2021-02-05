@@ -1,52 +1,79 @@
-<div class="row justify-content-md-center mt-5">
-    <div class="col-9 mt-4">
-        <div class="card text-center shadow mb-5 bg-white rounded">
-
-            <div class="card-body">
-                <strong class="p-2 author-name"> <%= @article.user.username %> </strong>
-                    <%= link_to article_path(@article.id) do %>
-                <h3 class="text-dark title mt-3 mb-2"><strong> <%= truncate(strip_tags(@article.title.to_s), length: 38) %> </strong></h3>
-                    <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
-                    <% end %>
-                <div class="card-text text-left my-4"><%= simple_format(@article.description) %></div>
-                <% if signed_in? && (@article.user == current_user || current_user.admin?) %>
-                    <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
-                    <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger" %>
-                    <%# link_to "Comment", article_comment_path(@article), class: "btn btn-outline-success" %>
-                <% end %>
-                </div>
-
-                <div class="card-footer">
-                    <small><%= @article.created_at.strftime("%b %d, %Y") %></small>
-
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          <i class="fa fa-comments" aria-hidden="true"> </i><%= @article.comments.count %>
-                        </button>
-                    </div>
-                        <% if @article.comments.present? || signed_in? %>
-                          <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <%= render 'comments/comment' %>
-                            
-                     
-                                <% if signed_in? %>
-                                <a class="btn btn-outline-info btn-addcomment" data-toggle="collapse" href="#addComment" role="button" aria-expanded="false" aria-controls="addComment">
-                                    Add comment
-                                  </a>
-                                  <div class="collapse" id="addComment">
-                                    <div class="card card-body my-4">
-                                        <%= render 'comments/form' %>
-                                    </div>
-                                  </div>
-                                <% end %>
-                                
-                            </div>
-                          </div>
-                        <% end %>
-                </div>
-            </div>
-        </div>
+<div class="row justify-content-md-center mt-4" id="articleShowPage">
+  <div class="col-1">
+    <div class="articleUserAbout">
+      <h3 class="card-title", id="user_about_card_name"><b><%= @article.user.username %></b></h3>
+      <div class="card-text", id="user_about_card_city"><%= @article.user.city %></div>
+      <div class="card-text", id="user_about_card_state"><%= @article.user.state %></div>
+      <div class="follow-icon", id="user_about_card_follow_icon">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+      </div>
     </div>
+    <div class="like_Btn">
+      <a href="javascript:;" id="likeBtn" data-id="<%= @article.id %>" %>
+        <i class="fas fa-hand-peace article-icon"></i>
+      </a>
+      <% likes_count=((@article.likes.count)==1 ? 'Clap' : 'Claps' ) %>
+        <span id="likeCount">
+          <%= likes_count %>
+        </span>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="card text-center shadow mb-5 bg-white rounded">
+
+      <div class="card-body">
+        <strong class="p-2 author-name">
+          <%= @article.user.username %>
+        </strong>
+        <%= link_to article_path(@article.id) do %>
+          <h3 class="text-dark title mt-3 mb-2"><strong>
+              <%= truncate(strip_tags(@article.title.to_s), length: 38) %>
+            </strong></h3>
+          <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+            <% end %>
+              <div class="card-text text-left my-4">
+                <%= simple_format(@article.description) %>
+              </div>
+              <% if signed_in? && (@article.user==current_user || current_user.admin?) %>
+                <%= link_to "Edit" , edit_article_path(@article), class: "btn btn-outline-info" %>
+                  <%= link_to "Delete" , article_path(@article), class: "btn btn-outline-danger" %>
+                    <%# link_to "Comment" , article_comment_path(@article), class: "btn btn-outline-success" %>
+                      <% end %>
+      </div>
+
+      <div class="card-footer">
+        <small>
+          <%= @article.created_at.strftime("%b %d, %Y") %>
+        </small>
+
+
+        <div class="btn-group">
+          <button type="button" class="btn" data-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-comments" aria-hidden="true"> </i>
+            <%= @article.comments.count %>
+          </button>
+        </div>
+        <% if @article.comments.present? || signed_in? %>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body comment-form">
+              <%= render 'comments/comment' %>
+
+            </div>
+          </div>
+          <% if signed_in? %>
+
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body my-4">
+                <%= render 'comments/form' %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

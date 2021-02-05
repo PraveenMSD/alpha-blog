@@ -1,9 +1,10 @@
 class ArticlesController < ApplicationController
-    before_action :set_article, only: [:show, :edit, :update, :destroy]
+    before_action :set_article, only: [:show, :edit, :update, :destroy, :get_count]
     before_action :require_user, except: [:show, :index]
     before_action :require_same_user, only: [:edit, :update, :destroy]
 
     def show
+
     end
 
     def index
@@ -43,10 +44,28 @@ class ArticlesController < ApplicationController
         redirect_to articles_path
     end
 
+    def get_count
+        likes = @article.likes.active.where(user_id: current_user.id)
+        if likes.present?
+            likes.first.update(like: false)
+        else
+            @article.likes.create(user_id: current_user.id, like: true)
+        end
+        render json: { likes: (@article.likes.active.count.to_s + ' Claps') }, status: 200
+    end
+
     private
 
     def set_article
         @article = Article.find(params[:id])
+        if current_user.present?
+            @like = Like.find_by(user_id: current_user.id, article_id: @article.id)
+            
+        else
+            @article = Article.find(params[:id])
+            @likes = @article.likes.all
+        end
+
     end
 
     def article_params

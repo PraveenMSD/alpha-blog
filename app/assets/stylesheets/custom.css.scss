@@ -74,13 +74,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   width: 50px;
 }
 
-// .modal-dialog {
-//   top:25%;
-//   left: 44%;
-//   width: 12%;
-//   height: 500px;
-//   outline: none;
-// }
 
 #user_profile {
   position: absolute;
@@ -101,17 +94,30 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   position: relative; 
   width:150px;
   padding:5px;
-  left: 360px;
+  left: 260px;
 }
 
-// .devise_signup {
-//   top: -4px; 
-//   left: 200px;
-// }
 
-// .devise_signin {
-//   height: 20%;
-// }
+.like_Btn {
+  position: relative; 
+  top: 80px; 
+  left: -45px;
+  font-size: 20px;
+}
+
+.articleUserAbout {
+  position: relative; 
+  top: 70px; 
+  left: -65px;
+  font-size: 20px;
+}
+
+.unlikeclap {
+  position: relative; 
+  top: -250px; 
+  left: -10px;
+  font-size: 20px;
+}
 
 #user_about_card_city {
   position: relative; 
@@ -131,7 +137,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   position: relative; 
   top: 9px; 
   left: 20px;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .right-half {
@@ -139,8 +145,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   left: 10px;
   top: 300px;
   width: 15%;
-  // border-radius: 25px;
-  // border: 2px solid #73AD21;
   padding: 20px;
   height: 220px;
   position: fixed;
@@ -267,47 +271,3 @@ body {
     margin-right: 1em; }
   .flickr_pagination .next_page {
     margin-left: 1em; }
-
-// /* Category Card Index */
-
-// * {
-//   box-sizing: border-box;
-// }
-
-// body {
-//   font-family: Arial, Helvetica, sans-serif;
-// }
-
-// /* Float four columns side by side */
-// .column {
-//   float: left;
-//   width: 25%;
-//   padding: 0 10px;
-// }
-
-// /* Remove extra left and right margins, due to padding in columns */
-// .row {margin: 0 -5px;}
-
-// /* Clear floats after the columns */
-// .row:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
-
-// /* Style the counter cards */
-// .card {
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-//   padding: 16px;
-//   text-align: center;
-//   background-color: #f1f1f1;
-// }
-
-// /* Responsive columns - one column layout (vertical) on small screens */
-// @media screen and (max-width: 600px) {
-//   .column {
-//     width: 100%;
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-// }

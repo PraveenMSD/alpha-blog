@@ -1,0 +1,4 @@
+var comments_list = $('#collapseExample');
+comments_list.append('<%= escape_javascript(render partial: @comment) %>');
+$('#collapseExample').html('<%= escape_javascript(render('comments/comment')) %>');
+$('.addCmmntField').val('');

@@ -1,1 +1,9 @@
-$('#content').html("<%= escape_javascript(render :partial => 'comments/comment')%>")
+$( document ).on('turbolinks:load', function() {
+  $("#new_comment").validate({
+    rules: {
+      "comment[body]": {
+        required: true
+      }
+    }
+  });
+});

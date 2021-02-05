@@ -1,9 +1,5 @@
 <div class="container-fluid">
     <% if @articles.blank? %>
-        <!-- <div class="text-center my-3">
-            <span style="font-size: 20px;">No articles were found..</span><br>
-            <h5><%= link_to "Create one", new_article_path %></h5>
-        </div> -->
     <% else %>
         <div class="row" id="all-articles">
             <% if signed_in? && @user == current_user && @articles.blank? %>

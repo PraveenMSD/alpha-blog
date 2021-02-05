@@ -10,4 +10,15 @@ $( document ).on('turbolinks:load', function() {
       }
     }
   });
+
+  $('#likeBtn').on('click', function() {
+    $.ajax({
+      method: "POST",
+      url: "/articles/get_count",
+      data: { id: $(this).data('id') }
+    })
+      .done(function( data ) {
+        $('#likeCount').text(data.likes);
+      });
+  })
 });

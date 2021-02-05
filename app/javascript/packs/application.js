@@ -12,16 +12,18 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+import $ from 'jquery';
+global.$ = jQuery;
 
-require('jquery')
 require('packs/jquery.validate.min')
 require('packs/articles')
 require('packs/signin')
 require('packs/signup')
 require('packs/country')
 require('packs/category')
-require('packs/intlTelInput')
 require('packs/comments')
+// require('packs/intlTelInput')
+
 
 import "bootstrap"
 import "@fortawesome/fontawesome-free/js/all";
