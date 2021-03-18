@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  devise_for :users, controllers: { registrations: "registrations" }
-  
+  devise_for :users, controllers: { registrations: "registrations", sessions: "devise/sessions#new" }
+
   root 'articles#index'
   get 'about', to: 'pages#about'
   resources :articles do
@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   # delete '/article/:id/likes', to: 'likes#un_like', as: 'remove_like'
 
   post '/articles/get_count' => 'articles#get_count'
+
+  
 
 
   get 'signup', to: 'users#new'

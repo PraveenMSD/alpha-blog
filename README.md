@@ -1,24 +1,33 @@
-# README
+# Medium-PR clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple medium clone app.
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+An simple medium clone with create post, add and delete comment, like unlike using jquery ajax.
 
-* System dependencies
+## Live Link
 
-* Configuration
+* [Medium-PR](https://praveenblog.herokuapp.com//)
 
-* Database creation
+## Getting Started
 
-* Database initialization
+### Dependencies
 
-* How to run the test suite
+* Bootstrap
+* Jquery
+* Form validation
 
-* Services (job queues, cache servers, search engines, etc.)
+### Executing program
 
-* Deployment instructions
+* How to run the program
+* Clone the repo
+```
+bundle install
+```
 
-* ...
+## Authors
+
+Contributors names and contact info
+  
+* [@Praveen](https://twitter.com/praveenr_96?s=09)
